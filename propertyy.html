@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Real Estate Listing</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white">
+<header class="bg-white py-4 px-6 flex justify-between items-center border-b">
+<div class="flex items-center">
+<span class="material-icons text-red-500 text-3xl">house</span>
+<span class="text-xl font-bold ml-2">RealEstate</span>
+</div>
+<div class="flex-1 max-w-lg ml-8">
+<div class="relative">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="w-full pl-10 pr-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="City, Neighbourhood, Address, School" type="text"/>
+</div>
+</div>
+<div class="flex items-center">
+<a class="text-gray-600 hover:text-gray-900 mx-3" href="#">Saved Homes</a>
+<a class="text-gray-600 hover:text-gray-900 mx-3" href="#">Saved Searches</a>
+<button class="bg-red-500 text-white px-4 py-2 rounded-full ml-3">Log In</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="mb-4">
+<span class="text-sm text-gray-500">Home &gt; For Sale &gt; British Columbia &gt; Victoria &gt; James Bay &gt; 1203-620 Toronto Street</span>
+</div>
+<div class="flex justify-between items-center mb-6">
+<nav class="flex space-x-8 border-b">
+<a class="py-2 border-b-2 border-black font-semibold" href="#">Overview</a>
+<a class="py-2 text-gray-500 hover:border-b-2 hover:border-gray-400" href="#">Property details</a>
+<a class="py-2 text-gray-500 hover:border-b-2 hover:border-gray-400" href="#">Mortgage calculator</a>
+<a class="py-2 text-gray-500 hover:border-b-2 hover:border-gray-400" href="#">Schools</a>
+<a class="py-2 text-gray-500 hover:border-b-2 hover:border-gray-400" href="#">Sales &amp; Tax History</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="flex items-center space-x-1 text-gray-600">
+<span class="material-icons">favorite_border</span>
+<span>FOLLOW</span>
+</button>
+<button class="flex items-center space-x-1 text-gray-600">
+<span class="material-icons">share</span>
+<span>SHARE</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2">
+<div class="grid grid-cols-2 gap-2 mb-8">
+<div class="col-span-2 relative">
+<img alt="Kitchen with wooden cabinets and stainless steel appliances" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXb2MgQue_BjUEogMigmTZ71ImyQaAg7LJPGRoXQ42JyBeu2gmy6ufyM3Hn9K43glsScQSdrIzLJtt_S7JmUFHwRQ6-iWNOJ-c9wPU-RF3CcIUW5yD4FS2R1vsbzasWtbIJe5TQ00SBp0ryfaeVRyc0AiIwAsM9iNeDpuKxPSHLwe5XdpZFkwMADiurTo-g4YXMkmxsYv3fUI8nUQQ4zvu-107ochJUWxwlUSguepHBbOV02vAFvq93nmPtjaN1z_5KfsO4wcG3Pfm"/>
+<div class="absolute bottom-4 left-4 flex space-x-2">
+<button class="bg-white/80 backdrop-blur-sm text-black px-3 py-1 rounded-full flex items-center text-sm"><span class="material-icons text-sm mr-1">photo_camera</span>Standard Tour</button>
+<button class="bg-white/80 backdrop-blur-sm text-black px-3 py-1 rounded-full flex items-center text-sm"><span class="material-icons text-sm mr-1">3d_rotation</span>Street View</button>
+<button class="bg-white/80 backdrop-blur-sm text-black px-3 py-1 rounded-full flex items-center text-sm"><span class="material-icons text-sm mr-1">map</span>Map</button>
+</div>
+</div>
+<img alt="Bedroom with a large window and city view" class="w-full h-48 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuyhaoQOe80F6mSH64CGDZQc6FmOhWANEH-WDZPIACUjZqJp60loyAMhyp1uV0HGkkLTW3z5170nfuiv824ilYkZZZHR7TwctN59gihZpw08vW8eVs_DA3AV4FjvNfNiSdsahH1rbydn9J-kA0g4VCid81UjFspc5H7rz3EwKHh-ytzUQnqdNi1n-lgDv-cun8Ewhm-rn2iLVS9kP4lw76LWE1kWftYD-jLfqBnrK_CdPelR_sapRfg7hTO_yXj6XTnIVh9jg4zt0E"/>
+<img alt="View of the city from a balcony" class="w-full h-48 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeSLVRDRojdCeQd7C1bXysLterteB8b8N7Co9kTkryWLr_NrGHJpdT1I7z_omMfmeQw_PUX3TGhDVgaOaHUXLGUX6uDoYlgDTF6UTccG2rRjGNmEA8Cv2CHc50u20b81LwQVwe1tVjkDsPE_5y0y4Oe_0EKC4axEASnaQn6ohH-lc_u808vfnxFFeDf7w5-459HbtsAhmf_ixjI_A0jDjqZC97BRagh870YybPBZqLu-GPdj01LW25-ofhObvS-2pJixEAhP3PN4Zz"/>
+<img alt="Bedroom with two single beds" class="w-full h-48 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZuieQrMK_DlLcmH4alKoOxV-7vW7CAAjr4UF3TFSPV_KeIzQDc5a7WPmLrcvuq63K2Q87lapQGnm3Rl-oCJ7ryCwjmswsfHhQdWHHSSJpuKA9yo--a0QEPKNNLnQ5YeDEJfpUzwXDPx-M0vQguSXCE5EutlgfSuSjSns7PqbOsJDk8oCHt2bZn4nCjYoZ5GMJ54ryhP8mj8v3dq3TpIzvyCNxnLBHcurl7xFM8KKNoeI_ts1SdEmvvaISjD1ZzgCwIcvxyMsRA02E"/>
+<div class="relative">
+<img alt="Living room area" class="w-full h-48 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2FIY9bFmg_slueI39uOWnY04JMFau7VaLdRezBkD9hs0E6TBNOuTEAoWITcX5G5mpwpWsDKkCI9H6bImJiiD5_BWTdrAKmF6KWI5lp323rWVVHmTxCMO9acD8CMDYNBcunenqn3MU0VKxslLaWLpLGlmsWfY08UbXPA5R_UkuKIcDErVAlc0DjKVBQkYi6-i1M8I6v8_qgicYc0I7wLwajEhKury7emlPEvp-2mt-xska4oLH3vmLQ0P10e94vh9qDNXrXUEUlz6q"/>
+<div class="absolute inset-0 bg-black/50 flex items-center justify-center rounded-lg">
+<span class="text-white text-lg font-semibold">+24 Photos</span>
+</div>
+</div>
+</div>
+<div>
+<h1 class="text-4xl font-bold">$399,900</h1>
+<p class="text-gray-500">Est. $2,186/mo <a class="text-blue-600 hover:underline" href="#">Get pre-approved</a></p>
+<p class="mt-2 text-lg">1203 - 620 Toronto Street</p>
+<p class="text-gray-600">Victoria, BC • V8V 1P7 • <a class="text-blue-600 hover:underline" href="#">James Bay</a></p>
+<div class="flex space-x-4 text-gray-800 mt-2">
+<span>0 Bed</span>
+<span>•</span>
+<span>1 Bath</span>
+<span>•</span>
+<span>484 SqFt</span>
+<span>•</span>
+<span>Apt/Condo</span>
+</div>
+</div>
+<div class="mt-8">
+<h2 class="text-2xl font-semibold mb-4">About this home</h2>
+<p class="text-gray-700 leading-relaxed">
+                        Wake up to picture-postcard-worthy views from this 12th-floor studio in the iconic Roberts House. Gaze out over the Olympic Mountains &amp; Beacon Hill Park, and Juan de Fuca Strait from the comfort of your private porch. This bright, south-facing home features floor-to-ceiling windows, an open layout, and an updated kitchen and bathroom. Whether you're looking for a first home, a pied-à-terre, or an investment opportunity, this is the perfect spot. Roberts House is a well-managed, pet-friendly steel and concrete building with premium amenities: indoor pool, fitness centre, hot tub, sauna, two guest suites, secure underground parking, and a live-in caretaker. Tucked into one of Victoria's best-loved areas in James Bay. Steps away from the ocean, Beacon Hill Park, Dallas Rd., and amenities. These are views you truly need to see to believe.
+                    </p>
+</div>
+<div class="mt-12 border-t pt-8">
+<p class="text-gray-500 text-sm mb-4">Listed by:</p>
+<div class="flex items-center">
+<img alt="Portrait of Owen Stacey" class="w-16 h-16 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvhMXOGaIvHo7GYJZIm7JGmuICyahsjuPRrOjlhviTSLV7pkZLmjWeNoLGD1ZZBm5egGCLURvvahzkCtzIgJIJP3aaRkY5GwDbcGXH7DInD94YH1OTifdm0OHaVL8dggeeEAIqFesPBK4XQ7R1Uf9v3xSdeWqzL-Nb6VKw6YNRsQnwZpN-UsbS9Pch83WN8Cno-TLht8rBfJApy9KGrhAx7NfzGOJ7vBFVaiD-WITErGClwrczCKq58DVgX_JDWUvBUW7_rSFcsfL6"/>
+<div class="ml-4">
+<p class="font-semibold text-lg">Owen Stacey PREC*</p>
+<p class="text-gray-500">Agent</p>
+</div>
+</div>
+<p class="text-gray-600 mt-4">5 years experience</p>
+</div>
+<div class="mt-12 border-t pt-8">
+<h3 class="text-xl font-semibold mb-4">Recent transactions</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="border rounded-lg overflow-hidden">
+<img alt="Exterior of a modern house with a large lawn" class="w-full h-32 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb0b-6Rnt6haVXxZbsrDx8Ou05ZbCxBG5XVd9XPuTzrx2-bNzdJVkBzHjuqwJVRW_j6zt9JSSJj_ZxXp0Xuu37-ky_syXgMdmOEO4NMeuKBru_BEbIoeGar2L_xQG6HeVJ6rRCgwp4seU9CD5jbayqUzSH3JLdjKiHhSHRWEpAtmEN21AKBtEiSlW8TSnTm0Hc94f6KDfda1McP-0-b9dKxemoTok9IKT5ZigA7YXqpnk0jU6vZV8js3XDBiRD4plZb3-pWRfeQXKz"/>
+<div class="p-2">
+<p class="font-semibold">$649,900</p>
+<p class="text-sm text-gray-500">2bd 2ba 989 sqft</p>
+</div>
+</div>
+<div class="border rounded-lg overflow-hidden">
+<img alt="Exterior of a suburban house with a two-car garage" class="w-full h-32 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApiG-Hb1_SCMOwJU0JJ8FKzMg-ASv5fGg50qnn3TMZXeBopI9g7QAdzpk7AWzTDF3J2DbyzJ_gzxiMcX-TRIMUKSEakPPfPdxtKVJ1JOcIyAkkCjDL6IUG7luSpL9TBtwHJs1V7C017rWURPrnb9azULf97lO-SSo_qkPicOr0C4tr9PF5Nk_AaO07C8Kw7pvzuvjzOV0ftQvYe2VCtOsUCMvjpSQNOYTdMQA8_RS1GIa2zNooWHQZKTOCScYxuHZLS6vLqDVSVvCe"/>
+<div class="p-2">
+<p class="font-semibold">$1,295,000</p>
+<p class="text-sm text-gray-500">3bd 3ba 2,122 sqft</p>
+</div>
+</div>
+<div class="border rounded-lg overflow-hidden">
+<img alt="Exterior of a two-story house with a neat garden" class="w-full h-32 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg_lcl9Xt5IMoBgiC0TOvMw4TeRv1rvTP5JzWiOiA1FOt5WlqWeJyinMh7cafVGD1hLHGJiNZIzHP0dXX0FdP9oHmi9npI3h1xTJRFRBMV9GggKH0xUXKSV8FbXDpDlyeLEFz58aEEvGMNhBkmT9cBREwqmmSojjLlzQAHQ6Aur7-WDMns4sZ1J-TW20bqdDrBtK-5oOcA83ZHgES0nLcm4ZENXxhyKa50kyktg6RBt-RXtcZYE3xg1kCXmOChd7JD4pbeKYbD5ZzV"/>
+<div class="p-2">
+<p class="font-semibold">$599,900</p>
+<p class="text-sm text-gray-500">2bd 1ba 899 sqft</p>
+</div>
+</div>
+<div class="border rounded-lg overflow-hidden">
+<img alt="Front view of a house with a grey exterior" class="w-full h-32 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJqkBjBRe627OO6iJl1rSlkZnF0mOcQX6XWmnXj8t20zz21CZew-x1tc6o99PZR1-TK01Wp8TqPMona1DBBc1g2bPNqBtasDZjPfRJwT4a8cZpTIBTXEiBO6lOLC1ijyY6YVro63pad7TipLJRDP6kr6fRUN_R1T3Dv_L0IGryIQbWxmWKtHZNu-VmQL7ujpJPcu0cxnUwLJj9-XBIn4uoyw8AUsZMH2hWvItLL43Vk1wL9hyQaQdcowszj11V4XiENJZWXfzTbBEb"/>
+<div class="p-2">
+<p class="font-semibold">$949,000</p>
+<p class="text-sm text-gray-500">3bd 2ba 1,514 sqft</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-1">
+<div class="sticky top-8 border rounded-lg p-6 shadow-lg">
+<h3 class="text-xl font-semibold mb-4">Schedule a tour</h3>
+<p class="text-gray-500 mb-6 text-sm">Tour with a buyer's agent</p>
+<div class="flex justify-between items-center mb-6">
+<button class="text-gray-500 p-2 rounded-full hover:bg-gray-100">
+<span class="material-icons">chevron_left</span>
+</button>
+<div class="flex space-x-2 text-center">
+<div class="p-3 rounded-lg">
+<p class="text-sm text-gray-500">SAT</p>
+<p class="font-bold text-xl">9</p>
+<p class="text-sm text-gray-500">AUG</p>
+</div>
+<div class="p-3 rounded-lg bg-blue-100 border border-blue-500">
+<p class="text-sm text-blue-700">SUN</p>
+<p class="font-bold text-xl text-blue-700">10</p>
+<p class="text-sm text-blue-700">AUG</p>
+</div>
+<div class="p-3 rounded-lg">
+<p class="text-sm text-gray-500">MON</p>
+<p class="font-bold text-xl">11</p>
+<p class="text-sm text-gray-500">AUG</p>
+</div>
+</div>
+<button class="text-gray-500 p-2 rounded-full hover:bg-gray-100">
+<span class="material-icons">chevron_right</span>
+</button>
+</div>
+<div class="flex space-x-2 mb-4">
+<div class="flex-1 text-center">
+<p class="text-xs text-gray-400">MORNING</p>
+<p class="text-xs text-gray-400">Up to 12:00pm</p>
+</div>
+<div class="flex-1 text-center">
+<p class="text-xs text-blue-500">AFTERNOON</p>
+<p class="text-xs text-blue-500">12:00pm - 5:00pm</p>
+</div>
+<div class="flex-1 text-center">
+<p class="text-xs text-gray-400">EVENING</p>
+<p class="text-xs text-gray-400">5:00pm - 9:00pm</p>
+</div>
+</div>
+<select class="w-full border rounded-md p-3 mb-4 text-center">
+<option>1:00 PM</option>
+</select>
+<button class="w-full bg-red-600 text-white font-bold py-3 rounded-lg hover:bg-red-700">Request a tour</button>
+<p class="text-center my-2">or</p>
+<button class="w-full border border-gray-300 text-gray-700 font-bold py-3 rounded-lg hover:bg-gray-50">Ask a question</button>
+</div>
+</div>
+</div>
+</main>
+
+</body></html>
