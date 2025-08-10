@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Real Estate Listings</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+<header class="bg-white shadow-md p-4 flex justify-between items-center">
+<div class="flex items-center space-x-4">
+<button class="flex items-center space-x-2 bg-blue-500 text-white px-4 py-2 rounded-md">
+<span class="material-icons">add</span>
+<span>Create</span>
+</button>
+<button class="flex items-center space-x-2 bg-gray-200 px-4 py-2 rounded-md">
+<span class="material-icons">save</span>
+<span>Save</span>
+</button>
+<div class="flex items-center space-x-2">
+<button class="p-2 rounded-md hover:bg-gray-200"><span class="material-icons">undo</span></button>
+<button class="p-2 rounded-md hover:bg-gray-200"><span class="material-icons">redo</span></button>
+</div>
+<div class="flex space-x-2">
+<button class="px-4 py-2 bg-gray-200 rounded-md">RB + 1</button>
+<button class="px-4 py-2 bg-gray-200 rounded-md">resum</button>
+<button class="px-4 py-2 bg-gray-200 rounded-md">layout</button>
+<button class="px-4 py-2 bg-gray-200 rounded-md">diufis</button>
+<button class="px-4 py-2 bg-gray-200 rounded-md">Stitch</button>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<button class="p-2 rounded-full hover:bg-gray-200"><span class="material-icons">search</span></button>
+<button class="p-2 rounded-full hover:bg-gray-200"><span class="material-icons">bookmark_border</span></button>
+<button class="p-2 rounded-full hover:bg-gray-200"><span class="material-icons">notifications_none</span></button>
+<button class="p-2 rounded-full hover:bg-gray-200"><span class="material-icons">person_outline</span></button>
+</div>
+</header>
+<div class="p-4 bg-white border-b">
+<div class="container mx-auto flex justify-between items-center">
+<div class="flex items-center space-x-2 text-sm">
+<a class="text-blue-600" href="#">domclick.ru</a>
+<span>/</span>
+<a class="text-blue-600" href="#">search?deal_type=sale&amp;offer_type=flat&amp;offer_type=layout&amp;category=living&amp;aids=2299</a>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-icons text-gray-500">star_border</span>
+<span class="material-icons text-gray-500">content_copy</span>
+<span class="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">NEW</span>
+<span class="material-icons text-gray-500">more_vert</span>
+</div>
+</div>
+</div>
+<main class="container mx-auto p-4">
+<div class="flex justify-between items-center mb-4">
+<div class="flex space-x-2">
+<button class="bg-white px-4 py-2 rounded-md border">Фильтры</button>
+<button class="bg-white px-4 py-2 rounded-md border">Купить</button>
+<button class="bg-white px-4 py-2 rounded-md border text-blue-600 border-blue-600">Квартира во вторичке, новостройке</button>
+<button class="bg-white px-4 py-2 rounded-md border">Комнат</button>
+<button class="bg-white px-4 py-2 rounded-md border">Цена</button>
+</div>
+<div class="flex items-center space-x-2">
+<div class="relative">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="pl-10 pr-4 py-2 border rounded-md w-72" placeholder="Город, жк, метро, район" type="text"/>
+</div>
+<button class="bg-green-100 text-green-700 px-4 py-2 rounded-md font-semibold flex items-center space-x-2">
+<span class="material-icons">check_box_outline_blank</span>
+<span>Выбрано 1</span>
+</button>
+<button class="bg-white px-4 py-2 rounded-md border">Метро</button>
+<button class="bg-white px-4 py-2 rounded-md border">Район</button>
+<button class="bg-white px-4 py-2 rounded-md border flex items-center space-x-2">
+<span class="material-icons">save</span>
+<span>Сохранить поиск</span>
+</button>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-white p-4 rounded-lg shadow-md flex space-x-4">
+<div class="w-1/3">
+<div class="relative">
+<img alt="Modern apartment complex" class="rounded-lg w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACmu19mxIgVHIzH7ddoaD_Xx43cuJdJUq9doMMq8upHYDmCMh-Te73fvyps6oGqwV44T3nhkFBZW5Ng92wNsEhAkcYAq6oE0sN7Fp5yzqrV76qvBPGCoRk3Qun58QGQqDOXdWZuasDOXolpL1WnsChD9b08RbcwibpQfEGhyHOKhSCwr1xQWpS93EhwbXLrYJNR13UlmnLJPFQtsMLXkjFlIKoU5PqidmEo_fJtfBQaR8R125dVgwDwF35egwL-XMu06pp64h_tJo"/>
+<div class="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-md">От застройщика</div>
+</div>
+<div class="grid grid-cols-4 gap-2 mt-2">
+<img alt="Floor plan" class="rounded-md h-20 object-cover col-span-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDe0A8dmLEG-V5aCycN-Cyt1QzJyOhRfqkcwtkBtmpUW2iy7kGN2E0wYGUSQscuVuNJfdj9ofepd0egTVxyDTTZXVnvNmcBiC0GQgLa88YQ2Atk4gSO75rknMthGD8sjpQZVQshaeza5qJuZHvBDxwgiYhI0Rz2nh8PclpSpC19RanvrpgyvKU8CLLWc0nzoc2DDY2il-3g8UC-pf5rtvHWucrGyQTZT9E03Pw7wYR1Y0-257SSJUqXbLsAqYQ1r-OG_Mskws1ZFQ"/>
+<img alt="Apartment view" class="rounded-md h-20 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyfuI69rXkNlB_V9_nBBsEhS6WV-s0PWwU5p242VpEzLwBr5saARbwqAwgCy-lSqQwFp6vd8u6AWy4BZDh0LFgF8LFjy_kllvOt0XHOwq-QRNp5n2ssGxxQEtJMSgqfKQdakFe25jFxTQrRRerk9xYg4M8oOKHdyBr4wMM5tvLHEkc4bEq2IMxYHBO_rtmoQ_0aTOcBkAHBF_LaT0snbW1FbyPRhVYD66WAAFz8xUw7mgmyib1RPDYLSynUI3jYlqpiK8bmi4599g"/>
+<div class="relative">
+<img alt="Apartment interior" class="rounded-md h-20 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsh7xBzxOh_Stvz1ATUqjC_mGw3EFGGTsYP64sBo-b574gWnpKibr4T0Y83JPgSm3Rdd2EhAZyFpCHeZIZrF5hDuK4aXFdB4Mf3hjWeaYEPukStGClUvcAk8CtFsJBbO10TEABJA4wTSkNDSwLkhidqkEdkeSKIEmP1OAFKkjzWqESQivwKv20Bj9SuaPa3RhznM9eZkaZ5tTwUKNsyDfNkpfe4oyKADoP7zVhymEaBsofF5hwBfe42Jk-vayYDXE7W1FnTtG7Elg"/>
+<div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white font-bold rounded-md">+10</div>
+</div>
+</div>
+</div>
+<div class="w-2/3 flex justify-between">
+<div>
+<h2 class="text-xl font-semibold">1-комн. квартира 37,4 м² 3/17 эт.</h2>
+<p class="text-gray-500 text-sm">2 предложения такой планировки</p>
+<div class="mt-2 flex items-center space-x-2">
+<span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">ЖК "Квартал на воде"</span>
+<p class="text-sm text-gray-700">Новостройка, 4 кв. 2025 г.</p>
+</div>
+<p class="text-sm text-gray-600 mt-1">Россия, Москва, жилой комплекс "Квартал на воде"</p>
+<div class="flex items-center space-x-2 text-sm text-gray-500 mt-1">
+<span class="material-icons text-sm">directions_walk</span>
+<span>Перерва - 7 мин.</span>
+</div>
+<div class="mt-4 flex items-center space-x-2">
+<img alt="Samolet logo" class="w-8 h-8 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgaW97UYbH2yyAs68XQ5ntSkLzDrV6J2B93M91tTtkWCDm3UEXLpKEDF9QTMrJz8SEPrqYGqmugkEmEXTeDhRlrYqHAgGo7SKxHyVkVn7ZIqFu6SVXJV-wLf04CKNaeqsSOVIwApc9CxMvzIcFGRA7FCSsq-gMJQL2_2FxwP7REBEqMYrFdtLdfOrSDx5WKi008NdcYEPBGDwQkndrfMMk3YfixTNI22xBdKws2tzdscIJCwgbdTgouQ11SD_0dCWC798QHmL90OU"/>
+<span class="font-semibold">Самолет</span>
+</div>
+<button class="mt-4 bg-green-500 text-white px-6 py-2 rounded-md font-semibold">Показать телефон</button>
+</div>
+<div class="text-right">
+<p class="text-2xl font-bold">от 11 891 775 ₽</p>
+<p class="text-sm text-gray-500">в ипотеку от 55 302 ₽/мес</p>
+<div class="mt-2 space-y-2 text-sm">
+<div class="bg-green-100 text-green-800 px-3 py-1 rounded-full flex items-center space-x-2 justify-end">
+<span class="material-icons text-sm">check_circle</span>
+<span>Финансирует Сбер</span>
+</div>
+<div class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">Субсидирование</div>
+<div class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">Ипотека траншами</div>
+</div>
+<div class="mt-12 flex justify-end space-x-2">
+<button class="p-2 rounded-full hover:bg-gray-100"><span class="material-icons text-gray-500">favorite_border</span></button>
+<button class="p-2 rounded-full hover:bg-gray-100"><span class="material-icons text-gray-500">bar_chart</span></button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-md flex space-x-4">
+<div class="w-1/3">
+<div class="relative">
+<img alt="Exterior of a residential building" class="rounded-lg w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIbmpDeHubwFcgJZFRVf-quO8HL_jKAfaY1xF3EhnybsR9KS2s3KrPUbqFlg0B-N4Lr2oCIjamlT_V1kGvN181vr3dyh5ZfjfiZxpbX5ZuHnWbR_D0tOpCWsjPJZptxZQQFRq32biDSDDjD8ggl8D-kXogWBybZNt6Cdetr0nrU1DWjlVFTBrtHer6V9WhfERUESq5lFdecHViQ-K2lUL4g1JoWes3XySs8NNutICqYuhJq2Cl3FGUUzUDrYtnsSKlncJwWPgCM84"/>
+<div class="absolute bottom-2 left-2 bg-black bg-opacity-50 text-white text-xs px-2 py-1 rounded-md">1 из 19</div>
+</div>
+<div class="grid grid-cols-4 gap-2 mt-2">
+<img alt="Living room" class="rounded-md h-20 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWDnFYEyhtT5P3s38Ba1zUaS8N5o9OiO6KubFRui6YiwDssv9HUdm8OckZtdXE6TAvIXp_hb_QJ0YA3Nu0EraQIn3GPY6z20hkdwWRDL-egniHH9gLccv7rsKVKxSx967KwOF6NxDROmkbd-HQS9YTpJtCG0_Pyy205T4rsCmKm4BkIERrLKx4rwRGRNQoJR6J8SHdEIGe90c0YdjPl1pvUPt1fySZm4vN11mITaEjNjgHS_xZT6nZQ5rSn0843uWli24vZbqlv7c"/>
+<img alt="Bedroom" class="rounded-md h-20 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp0syjoShBHqj5mWaSjsO5yPQizU9b7d6lrwOzIresL3HVr1Wgf_wcj-DUNQoPPTYjaUi8aLxtzW_G79Jrjsqst7zL7cBH2_VQEnext0LiLN2FOXL4vk2lYTPNc3FZII8tJ7DVosOevUEAsg4C5Bza732_PaLNtdFvsdRIors9GuDdQxlKd4nbS7tMUrzuNWaZfdCQQsoNIGcDzij5klKN7Vhibwm7DTacsi97zOErCPWfs8Y6gZsbu1fjHTXppgLCyzfvFuNdgOc"/>
+<img alt="Kitchen" class="rounded-md h-20 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1VLSiscbmecL4g_8RmsMeETI9i3Kv0gCFspgiqjf2OwPXnrAG7y4qMwCJxyKdrQosp1WvdGjCOC8aZ8LDE8cfsK8N2S4uvaKBsRpTbb4N7VPOO5N3blsKiXBR9j59nlU16sEyhR5yBqeECDpbow_zoZN0LdcLNEVFQgLzYDg85HaaTAxpKOvI37D6ttopTaZN8FeiVvHA0VO2JyZ6M38Pdp_L0lJ1f2oQovmw9MVtaisIhSjwAAqnXUA0wCZ7NCkqWLF79mGun1U"/>
+<div class="relative">
+<img alt="Bathroom" class="rounded-md h-20 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8leOyDgb11j80_t0-tVND88gFqey4tGq24X8hVEvbxj6bsDN7FSEgXvF7_5qhZgerY4qDW0cl_p9yXIxQH3W79G2Bo50k-HT9CdNDpuKxhWJCgjBaqU_JEZqo0_wyhJBOF5t-WBips8bMn3KG7rwIsYTwCjGHVqb0iKwFul4jkVVSHmBVhZRyNNRvAWucpvZgUerEA0zhfBfMgCzbFKYG4H6rSF6uKOeUwpIKVMpaDQu9H3unyrvLnnz1jHNgjxIHpSL0acQEdr4"/>
+<div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white font-bold rounded-md">+15</div>
+</div>
+</div>
+</div>
+<div class="w-2/3 flex justify-between">
+<div>
+<h2 class="text-xl font-semibold">3-комн. квартира 62,7 м² 9/14 эт.</h2>
+<p class="text-sm text-gray-600 mt-1">Москва, Суздальская улица, 20 к5</p>
+<div class="flex items-center space-x-2 text-sm text-gray-500 mt-1">
+<span class="material-icons text-sm">directions_walk</span>
+<span>Новокосино - 12 мин.</span>
+</div>
+<p class="text-sm text-gray-700 mt-2 max-w-md">
+                            Документы готовы к сделке. Лучшая цена в этом районе на 3-комнатную квартиру! В спальном районе Новокосино, продается 3-ех комнатная уютная квартира, в пешей доступности три школы и три...
+                        </p>
+<div class="mt-4 flex items-center space-x-2">
+<img alt="Real estate agent photo" class="w-8 h-8 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2i9ATw1tBXsbQssZ2iTnxm8k8EpP8TezhhDKj_F7RRHaLZDrXxxoePd_GfIwCcgw1RObXJlUWlTaRYBXlOyYjSvUwyM3pE-Lv_kMp-wK82HsagcCCCyskqnHBRnh2rZyD0vnUOjVB_ZAKgOjb4kI0CKGmGvWYThdBE4PRQezuHxWdHZpyIZUIKfjNCn-cwYwCqAojwun8ZBUmjuZlsrWj3dmrqHFft7m-8zcMnO_S4Mk9lYUbZoOgKNF0yKzmQ7pbtRvUNoR3GQ0"/>
+<div>
+<p class="font-semibold">Представитель Собственника</p>
+<p class="text-xs text-gray-500">Агентство недвижимости</p>
+</div>
+</div>
+<div class="mt-4 flex space-x-2">
+<button class="bg-green-500 text-white px-6 py-2 rounded-md font-semibold">Показать телефон</button>
+<button class="bg-white border border-gray-300 px-6 py-2 rounded-md font-semibold">Написать</button>
+</div>
+</div>
+<div class="text-right">
+<p class="text-2xl font-bold">16 500 000 ₽</p>
+<p class="text-sm text-gray-500">263 157 ₽/м²</p>
+<p class="text-sm text-blue-600">в ипотеку от 238 265 ₽/мес</p>
+<div class="mt-2 text-sm">
+<div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-flex items-center space-x-1">
+<span class="material-icons text-sm">check</span>
+<span>Проверено в Росреестре</span>
+</div>
+</div>
+<div class="mt-2 flex items-center justify-end space-x-1 text-sm text-gray-500">
+<span class="material-icons text-sm">history</span>
+<span>Вчера</span>
+</div>
+<div class="mt-12 flex justify-end space-x-2">
+<button class="p-2 rounded-full hover:bg-gray-100"><span class="material-icons text-gray-500">favorite_border</span></button>
+<button class="p-2 rounded-full hover:bg-gray-100"><span class="material-icons text-gray-500">bar_chart</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+</body></html>
