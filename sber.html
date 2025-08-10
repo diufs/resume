@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Поиск недвижимости</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+<div class="container mx-auto p-8">
+<header class="flex justify-between items-center mb-8">
+<h1 class="text-3xl font-bold text-gray-800">Поиск недвижимости</h1>
+<button class="text-sm text-gray-600 flex items-center">
+                История поиска
+                <span class="material-icons text-lg ml-1">history</span>
+</button>
+</header>
+<div class="bg-white p-4 rounded-lg shadow-md flex items-center mb-8">
+<span class="material-icons text-gray-400 mr-2">search</span>
+<input class="flex-grow focus:outline-none" placeholder="Город, шоссе, поселок, адрес, метро, район" type="text"/>
+<button class="text-gray-600 mx-4"><span class="material-icons">tune</span></button>
+<button class="text-gray-600 flex items-center mr-4">
+<span class="material-icons text-lg mr-1">map</span>
+                На карте
+            </button>
+<button class="bg-green-500 text-white px-8 py-2 rounded-lg font-semibold hover:bg-green-600">Найти</button>
+</div>
+<section class="mb-8">
+<h2 class="text-2xl font-bold text-gray-800 mb-4">Моя недвижимость</h2>
+<div class="flex space-x-2 mb-4 border-b">
+<button class="px-4 py-2 text-sm font-medium text-white bg-gray-800 rounded-t-lg">Для вас</button>
+<button class="px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-200 rounded-t-lg">Ипотека</button>
+<button class="px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-200 rounded-t-lg">Купить</button>
+<button class="px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-200 rounded-t-lg">Снять</button>
+<button class="px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-200 rounded-t-lg">Построить</button>
+<button class="px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-200 rounded-t-lg">Продать и сдать</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-1 bg-white p-6 rounded-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="relative mb-4">
+<img alt="Graph showing property value over time" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvlKh0sbOT9FnOXDypEO3aPKo2FYSAsx17BDc1vGS_2JDXwBKQ6SvAaIfnhxlg4QAqEZzBR3YbvFXljAXp9ZFIeXxiNnnSOWQXhQhl-6xBq31fTpYkKItPAzBlPpYRKtMzBoauK7M4mFYKpMv2VLZV1lfEar3xUZ0l0KAvooizSBy_fQBMw7cO6UxjrigJpFuPjhvcFlCPREfo1yXhadv7ke-w7FdRLkV4BTcppW00dbdTn_dCoaMM9jFbB7kxwkW_Akbx__Z0aTc"/>
+</div>
+<h3 class="text-lg font-bold mb-2">Моя недвижимость</h3>
+<p class="text-gray-600 text-sm mb-4">Добавьте объект и следите за ценой и пользуйтесь сервисами рядом с вашим домом</p>
+</div>
+<button class="w-full bg-blue-100 text-blue-600 font-semibold py-2 px-4 rounded-lg flex items-center justify-center hover:bg-blue-200">
+<span class="material-icons mr-2">add_circle_outline</span>
+                        Добавить объект
+                    </button>
+</div>
+<div class="md:col-span-2 grid grid-cols-2 gap-6">
+<div class="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between items-start">
+<div>
+<h3 class="font-semibold mb-1">Калькулятор</h3>
+<p class="text-sm text-gray-500">Расчёт ипотеки</p>
+</div>
+<img alt="Calculator icon" class="w-16 h-16 self-end" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvW5li1yrwCPJD30ndgSm8ztcWtp9Zoyim3LGMfMmBHJIKNVAThLLZU4tXAYTS27TOsN11UXhRGSlHKESSyFxCgOVPqh7iiTYXCTsA7To8YorhBsJxNWeGQ22zMJZb4L9HFYZjmW0AG9yHXoLqZUyRpt4bK-VIbFrFYlFcMK-8xB31aib29qkR-mu9uHVZX4l1teb6_WM3HjqKVUfpnTkAjgXpPpZbQMtw6zl-jV3jmhosCUirbt8k321yNPdkv7ij2SvAet8qnoQ"/>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between items-start">
+<div>
+<h3 class="font-semibold mb-1">Моя ипотека и сделки</h3>
+</div>
+<img alt="Checkmark icon" class="w-16 h-16 self-end" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYbTKarfwVYzBh8xTyHOpKLdg-oeIkhFAVkV2XcKBbrqL3kCmTRJK9w8kOYki2wBgQnpI7pYk4DjPj7wB2Ansyw2l4TEm__8jwXbpCKIsCmnfDyopaEWmlJK-520q5kGva5dxWB-EIuT9NTkHgng1J0t21i9yLsabHm_40UsXyZOfBP1gQ9DSaYG7N_mXCZPFtgnAmHR1nTOzxn7x5vHDJK1D2AKobqmu2Zj_G8fuzX4R3eeR9PDTxUkXF1pKgwGaty4K8Iq4B0uU"/>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between items-start">
+<div>
+<h3 class="font-semibold mb-1">Кредит под залог</h3>
+<p class="text-sm text-gray-500">До 20 млн рублей</p>
+</div>
+<img alt="House with coin icon" class="w-16 h-16 self-end" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjECWodmqaH9a1JyfxpF9dHGIj1oNku_olYB-7HHNQP__jXu8qz-qbyrvmyGlPistcsYPiHZplvehM9LhtEvi6k-eyhudOWX_u88b_vKh5luZEKjgF9oRsEcTOoanntpbz8vy06V1voiFJDE4ne6rfF572uLbIbRPNoLXVTsj3AOIEwjQBUKCh0yvFimr4zEPiOVFeC4mS-n4aqNgnFhpPEctaqv3yFLxSiu6UZ0OJkmJHhj4VHpPxQKPOtqcxsZMPC2BRSNoS6yg"/>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between items-start">
+<div>
+<h3 class="font-semibold mb-1">Сделка за свои средства</h3>
+</div>
+<img alt="Wallet with money icon" class="w-16 h-16 self-end" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX__zI4oHzbrKbGxkILlh2fKj6Q7AOX3q9S3rhrbTOliXsYmrncsIQIMUda3Q_M3aSk9Y56UXuQzJYMlvekim2ubkJw2XEX3RxoKZpXKrLigHsBw6sFrmf1ecLBoa5ICiin9gzWJduftXVcFkMj-Gz3XhnL5nOK_bvrVavcT2IDXkp0sL4uUywzb5KOkx54NxF0BVbDQaWo5yP9WzW0NTwiUzVw0kyFZl7tudsgWMf693UQH_xzuN4_iioydYSL7RhmQqX411zgpQ"/>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-green-50 p-6 rounded-2xl shadow-md flex items-center justify-between">
+<div class="flex-1">
+<p class="text-sm text-gray-500 mb-1">Новые возможности</p>
+<h2 class="text-2xl font-bold text-gray-800 mb-4">Пользуйтесь Домклик<br/>вместе со Сбер ID</h2>
+<button class="bg-green-500 text-white px-6 py-3 rounded-lg font-bold flex items-center hover:bg-green-600">
+<span class="material-icons mr-2">login</span>
+                    Войти по Сбер ID
+                </button>
+</div>
+<div class="relative">
+<img alt="Sber ID logo with a large checkmark" class="w-48 h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG6SFZImr6nMdxPCZPGrAZATJVC_3bEia74sgeoCuke3Hm7emWBXfck-VqqY-dKUJrM99MTXQ_nZ4CJ7UVE9ruOc-MImxnRbjE3Gz3e9Cy0rXpfvzuOQvgp9Kef5kjLqWPqTToZWuMoacBA0lmURbh5d6uMI-sPMI-R0GxfNcvZc540fRggYYMQ_XDvk4bG-eMaR7xnwOuoZmqpHa7I473RiYHttOn2uwZZKLNBnTXKj3D-MtiP9Jr1FUvSAfazEKrfRU2d4V1lZY"/>
+<span class="absolute bottom-2 right-2 text-xs text-gray-400 bg-white px-2 py-1 rounded">Реклама</span>
+</div>
+</section>
+<div class="flex justify-center mt-4">
+<div class="w-2 h-2 bg-gray-400 rounded-full mx-1"></div>
+<div class="w-2 h-2 bg-gray-300 rounded-full mx-1"></div>
+<div class="w-2 h-2 bg-gray-300 rounded-full mx-1"></div>
+</div>
+</div>
+<div class="fixed bottom-4 right-4 bg-gray-800 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg cursor-pointer">
+<span class="material-icons">chat_bubble_outline</span>
+</div>
+
+</body></html>
