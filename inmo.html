@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portales</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+<div class="flex h-screen">
+<aside class="w-20 bg-blue-800 text-white flex flex-col items-center py-4">
+<div class="p-3 bg-yellow-400 rounded-lg mb-6">
+<span class="material-icons text-blue-800">
+                    all_inbox
+                </span>
+</div>
+<nav class="flex flex-col items-center space-y-4">
+<a class="flex flex-col items-center text-xs text-yellow-400" href="#">
+<span class="material-icons">dashboard</span>
+<span class="mt-1">Propiedades</span>
+</a>
+<a class="flex flex-col items-center text-xs hover:text-yellow-400" href="#">
+<span class="material-icons">real_estate_agent</span>
+<span class="mt-1">Demandas</span>
+</a>
+<a class="flex flex-col items-center text-xs hover:text-yellow-400" href="#">
+<span class="material-icons">people</span>
+<span class="mt-1">Contactos</span>
+</a>
+<a class="flex flex-col items-center text-xs hover:text-yellow-400" href="#">
+<span class="material-icons">event</span>
+<span class="mt-1">Agenda</span>
+</a>
+<a class="flex flex-col items-center text-xs hover:text-yellow-400" href="#">
+<span class="material-icons">task_alt</span>
+<span class="mt-1">Tareas</span>
+</a>
+<a class="flex flex-col items-center text-xs hover:text-yellow-400" href="#">
+<span class="material-icons">web</span>
+<span class="mt-1">Portales</span>
+</a>
+<a class="flex flex-col items-center text-xs hover:text-yellow-400" href="#">
+<span class="material-icons">donut_large</span>
+<span class="mt-1">Círculos</span>
+</a>
+<a class="flex flex-col items-center text-xs hover:text-yellow-400" href="#">
+<span class="material-icons">email</span>
+<span class="mt-1">Correo</span>
+</a>
+<a class="flex flex-col items-center text-xs hover:text-yellow-400" href="#">
+<span class="material-icons">insights</span>
+<span class="mt-1">Estadísticas</span>
+</a>
+</nav>
+<div class="mt-auto flex flex-col items-center space-y-4">
+<a class="flex flex-col items-center text-xs hover:text-yellow-400" href="#">
+<span class="material-icons">settings</span>
+<span class="mt-1">Ajustes</span>
+</a>
+<a class="flex flex-col items-center text-xs hover:text-yellow-400" href="#">
+<span class="material-icons">help_outline</span>
+<span class="mt-1">Ayuda rápida</span>
+</a>
+</div>
+</aside>
+<main class="flex-1 flex flex-col">
+<header class="bg-white shadow-md p-4 flex justify-between items-center">
+<div class="flex items-center">
+<span class="text-sm text-gray-500">Portales</span>
+</div>
+<div class="flex items-center space-x-4">
+<div class="relative">
+<input class="border rounded-md py-2 pl-10 pr-4 text-sm w-64 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Inmovilla" type="text"/>
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                            search
+                        </span>
+</div>
+<button class="p-2 rounded-full hover:bg-gray-100">
+<span class="material-icons text-gray-600">call</span>
+</button>
+<button class="p-2 rounded-full hover:bg-gray-100">
+<span class="material-icons text-gray-600">forum</span>
+</button>
+<div class="flex items-center space-x-2">
+<img alt="User avatar" class="w-8 h-8 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdfHzV7C59lSV-2vT-jHhfhkAVD1yOUOzuKjeiD6-mZc6t-aLvCwiC1uHcOi9zv5BCMZd4YLvfVehjr7q6vebX_KlNUTdYF6rbmKMm_QFS_CENcgjwTqulxF6IT-i1Q2tvgJcfUCuYZCYNc_meu_ZERcXAC14bV4nk2qG0bGybEFn0Fxmbw7e4UAv7FIYdieP9Vrih4-XeCBHjbKM3owPDQ7xR2jXbOVc4e6svysUPyM8Tp91CZz1J4QNZYao_pMITDyPbjYR_m0A"/>
+</div>
+</div>
+</header>
+<div class="p-6 flex-1">
+<div class="flex justify-between items-center mb-6">
+<div class="flex items-center space-x-2 text-sm">
+<span class="text-gray-500">Portales</span>
+<span class="material-icons text-gray-400 text-sm">chevron_right</span>
+<span class="font-medium text-gray-800">Todos</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="text-sm text-gray-600">Acciones</span>
+<button class="bg-yellow-400 text-blue-800 px-4 py-2 rounded-md text-sm font-medium flex items-center">
+<span class="material-icons text-sm mr-2">add</span> Contactos
+                        </button>
+</div>
+</div>
+<div class="flex items-center border-b mb-6">
+<a class="px-4 py-2 text-sm font-medium text-blue-600 border-b-2 border-blue-600" href="#">Todos</a>
+<a class="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700" href="#">Gratuitos</a>
+<a class="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700" href="#">Freemium</a>
+<a class="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700" href="#">Premium</a>
+<div class="ml-auto flex items-center space-x-2">
+<button class="p-2 rounded-md hover:bg-gray-200">
+<span class="material-icons text-gray-500">view_list</span>
+</button>
+<button class="p-2 rounded-md bg-gray-200">
+<span class="material-icons text-gray-700">view_module</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-white rounded-lg shadow p-4 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<img alt="Idealista logo" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmpNdQySmYSVE0kkvW9KQkklnsg-AYIQCUaP67AuLqyiT-T6mV0b0qTTFkgmV-EgA8ZcOMBoQaWy4UTWPxVDgaT2NVJtB8Ls-Pf361RjBTXPBjLfPi1PtKTipV1fR-ZnDItq2DW_jyBkFdEddirSANDyLZVfVf9xq7Y4Us9lUoBpDwr4_6x52Lubht5jvcjaj09fqlad_9l5t0SgADCeW4HwkdfksVVEUnc7pzywQuyNy1hXwx-bJd81Dd7Oi5Y2EgIHmZJeati58"/>
+<div class="flex items-center space-x-2 text-gray-500">
+<span class="material-icons text-sm">wifi</span>
+<span class="material-icons text-sm">refresh</span>
+<span class="material-icons text-sm">settings</span>
+</div>
+</div>
+<div class="mb-4">
+<span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Premium</span>
+</div>
+<div class="grid grid-cols-2 gap-4 text-sm mb-4">
+<div>
+<p class="text-gray-500">Límite</p>
+<p class="font-medium text-gray-800">Ilimitado</p>
+</div>
+<div>
+<p class="text-gray-500">Prop. marcadas</p>
+<p class="font-medium text-gray-800">735</p>
+</div>
+<div>
+<p class="text-gray-500">Último envío</p>
+<p class="font-medium text-gray-800">045 | 16/03/2022</p>
+</div>
+<div>
+<p class="text-gray-500">Estado</p>
+<p class="font-medium text-gray-800">Mostrando calle</p>
+</div>
+<div>
+<p class="text-gray-500">Datos contacto</p>
+<p class="font-medium text-gray-800">Sucursales</p>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full bg-white border border-blue-600 text-blue-600 py-2 rounded-md hover:bg-blue-50 text-sm font-medium">Ver envío</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<img alt="Fotocasa logo" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHvV_GKt_bOyYPh5SMxE3OJLZ04_0Lll8B9s11NNi23csUoB0ffq2oUPtzqhFQohc1Se1wIaGdqpl4KFOXQTiaO5f97n7u1KK5NbikBzH06k5eMm3l0SqXDkqHep04MGYWW-uUDTIm2GmqtiySlDC7eNRs4iT0vOly2cvlLSk0eA7vqcPTKzbt9JglE453Q8XW_upX-v7RYqWfYPo3xDYWgV3nZpN8bShoMS1E0FQxgciKtOgilwKTiEAPGQe2Nd1nyWayNpT0eV0"/>
+<div class="flex items-center space-x-2 text-gray-500">
+<span class="material-icons text-sm">wifi</span>
+<span class="material-icons text-sm">refresh</span>
+<span class="material-icons text-sm">settings</span>
+</div>
+</div>
+<div class="mb-4">
+<span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Premium</span>
+</div>
+<div class="grid grid-cols-2 gap-4 text-sm mb-4">
+<div>
+<p class="text-gray-500">Límite</p>
+<p class="font-medium text-gray-800">Ilimitado</p>
+</div>
+<div>
+<p class="text-gray-500">Prop. marcadas</p>
+<p class="font-medium text-gray-800">735</p>
+</div>
+<div>
+<p class="text-gray-500">Último envío</p>
+<p class="font-medium text-gray-800">045 | 16/03/2022</p>
+</div>
+<div>
+<p class="text-gray-500">Estado</p>
+<p class="font-medium text-gray-800">Mostrando calle</p>
+</div>
+<div>
+<p class="text-gray-500">Datos contacto</p>
+<p class="font-medium text-gray-800">Sucursales</p>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full bg-white border border-blue-600 text-blue-600 py-2 rounded-md hover:bg-blue-50 text-sm font-medium">Ver envío</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<img alt="Yaencontre logo" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7yE_o783ijjj5w1U8-Hpcjy1Ay4QLP8fdenOnJnL46ex7xNwQJWR3nxFcToGyFCsxRkv_6KUetM7Hk7kbWMHVUTFdITDvvISJj3v6nzBVFqVP7pU0CEc6H8EqbKurH8uE7lK-q1H4JQ5g8EW3qj7dM58Eqxi475IlkabLdqIOv30gUwiAqjDtCxPt5wgM3m2pjiUnpsy2m_VBGoHlLboc2lmBqydTrbLvsy-DjFlcyd6-KxUfxLRruK7-PkhYlVibZ-FERlWnVzY"/>
+<div class="flex items-center space-x-2 text-gray-500">
+<span class="material-icons text-sm">wifi</span>
+<span class="material-icons text-sm">refresh</span>
+<span class="material-icons text-sm">settings</span>
+</div>
+</div>
+<div class="mb-4">
+<span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Premium</span>
+</div>
+<div class="grid grid-cols-2 gap-4 text-sm mb-4">
+<div>
+<p class="text-gray-500">Límite</p>
+<p class="font-medium text-gray-800">Ilimitado</p>
+</div>
+<div>
+<p class="text-gray-500">Prop. marcadas</p>
+<p class="font-medium text-gray-800">735</p>
+</div>
+<div>
+<p class="text-gray-500">Último envío</p>
+<p class="font-medium text-gray-800">045 | 16/03/2022</p>
+</div>
+<div>
+<p class="text-gray-500">Estado</p>
+<p class="font-medium text-gray-800">Mostrando calle</p>
+</div>
+<div>
+<p class="text-gray-500">Datos contacto</p>
+<p class="font-medium text-gray-800">Sucursales</p>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full bg-white border border-blue-600 text-blue-600 py-2 rounded-md hover:bg-blue-50 text-sm font-medium">Ver envío</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<img alt="Todopisos logo" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTcy6ewyMrd1a4htWrOqBorRhIdRRtxoLkRljWXIz9-LcvBiXcZP6SMdgGSX0HYaN5j3wpWSH_is0YkL4q19TTLVsvciLj0qPtp5c-NkoPs22VtDLcg9iwNRans2Q5ERRn3f1Yrnq2OPA7Kqlek-SdxHy2R6ykFIPXnSCrnF88Gc0s7py13DwoYg0w2ICsj5cuTJCmwFdfzGo4W6EzVIFoCxw0Rli0Ut1yccc_b34RcVEuvbMAG6ZdZnrSCtlBGoIQx397K9NNlu4"/>
+<div class="flex items-center space-x-2 text-gray-500">
+<span class="material-icons text-sm">wifi</span>
+<span class="material-icons text-sm">refresh</span>
+<span class="material-icons text-sm">settings</span>
+</div>
+</div>
+<div class="mb-4">
+<span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Premium</span>
+</div>
+<div class="grid grid-cols-2 gap-4 text-sm mb-4">
+<div>
+<p class="text-gray-500">Límite</p>
+<p class="font-medium text-gray-800">Ilimitado</p>
+</div>
+<div>
+<p class="text-gray-500">Prop. marcadas</p>
+<p class="font-medium text-gray-800">735</p>
+</div>
+<div>
+<p class="text-gray-500">Último envío</p>
+<p class="font-medium text-gray-800">045 | 16/03/2022</p>
+</div>
+<div>
+<p class="text-gray-500">Estado</p>
+<p class="font-medium text-gray-800">Mostrando calle</p>
+</div>
+<div>
+<p class="text-gray-500">Datos contacto</p>
+<p class="font-medium text-gray-800">Sucursales</p>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full bg-white border border-blue-600 text-blue-600 py-2 rounded-md hover:bg-blue-50 text-sm font-medium">Ver envío</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<img alt="Aquitacasa logo" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjzXz56obB0EGDzFhAIu9KUeq6j3me33ynIc4UyKnkG5Rd0zGJmp8T8UnOANwa93Pep6s_esbi4EgThhc19lZ0cyqqlgiWJ2LqJ7eynJPUGT0p7A-LFX2EcLRswB_aTaMT6UDNK63IniZfuCS6-ts-Mh6e3mpl_6-kGMP_4ppxj7e4GXFAq3KOGouY-qewPrkM6rBGqchyYl7KLQS0WFkcdySbNBx-h4mQgH06DQeMn6j6SyzxFj66vYljvFd_2CawVorl9Za_PZk"/>
+<div class="flex items-center space-x-2 text-gray-500">
+<span class="material-icons text-sm">wifi</span>
+<span class="material-icons text-sm">refresh</span>
+<span class="material-icons text-sm">settings</span>
+</div>
+</div>
+<div class="mb-4">
+<span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Freemium</span>
+</div>
+<div class="grid grid-cols-2 gap-4 text-sm mb-4">
+<div>
+<p class="text-gray-500">Límite</p>
+<p class="font-medium text-gray-800">735</p>
+</div>
+<div>
+<p class="text-gray-500">Prop. marcadas</p>
+<p class="font-medium text-gray-800">735</p>
+</div>
+<div>
+<p class="text-gray-500">Último envío</p>
+<p class="font-medium text-gray-800">045 | 16/03/2022</p>
+</div>
+<div>
+<p class="text-gray-500">Estado</p>
+<p class="font-medium text-gray-800">Mostrando calle</p>
+</div>
+<div>
+<p class="text-gray-500">Datos contacto</p>
+<p class="font-medium text-gray-800">Sucursales</p>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full bg-white border border-blue-600 text-blue-600 py-2 rounded-md hover:bg-blue-50 text-sm font-medium">Ver envío</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<img alt="Pisos.com logo" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRIWFCTM46b1L9ye47EQ4oJjLF6ZsYN4jzvG-iWVR-GxH48LKbuHNZVg_USDTVT2_EbMWR-HD8PJ_LmCunRKHzK8Vo5TpR6CDyYkTuKyN2-AO6FqeTDQXZb4hI6hVvsJuJeQhp2Z3ov18AZfOvq6uSs-7bQCkR4oP0rFYxzxuiCpOukhx87TdKrzAlWHb56HXPGBR3EVSqGw2tvDStZJuaSiZeF2BFS-c-3bG-sVqi6G7noT0lGBPG_8AclnFRCBiGlez2d_5ndYk"/>
+<div class="flex items-center space-x-2 text-gray-500">
+<span class="material-icons text-sm">wifi</span>
+<span class="material-icons text-sm">refresh</span>
+<span class="material-icons text-sm">settings</span>
+</div>
+</div>
+<div class="mb-4">
+<span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Freemium</span>
+</div>
+<div class="grid grid-cols-2 gap-4 text-sm mb-4">
+<div>
+<p class="text-gray-500">Límite</p>
+<p class="font-medium text-gray-800">Ilimitado</p>
+</div>
+<div>
+<p class="text-gray-500">Prop. marcadas</p>
+<p class="font-medium text-gray-800">735</p>
+</div>
+<div>
+<p class="text-gray-500">Último envío</p>
+<p class="font-medium text-gray-800">045 | 16/03/2022</p>
+</div>
+<div>
+<p class="text-gray-500">Estado</p>
+<p class="font-medium text-gray-800">Mostrando calle</p>
+</div>
+<div>
+<p class="text-gray-500">Datos contacto</p>
+<p class="font-medium text-gray-800">Sucursales</p>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full bg-white border border-blue-600 text-blue-600 py-2 rounded-md hover:bg-blue-50 text-sm font-medium">Ver envío</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<img alt="Vivados logo" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANul3oSY8R6yyFAvNrFnuvkOXWtKfPAV_41cLcDjHfVP7ko7jff-q-e_PYRb9DwopqORHMZjJdOzSVSzv82a3-jUebtDr-_t-PDlaK7Xf0Nh3g-Byw10det4GN6wTRWa02q0CHw6qjAUj1pH8HXhIRFs51g-USRpdb9zKTrs_Bc6XNk-A-GOPdMiSLNnNkumNfrGnOyuBdk6BOO95cgD_gKvolOdBU8gd9POZaVxUrizpkOZgEXHt0K_p_UVvy4e_y7dPtz8P90YQ"/>
+<div class="flex items-center space-x-2 text-gray-500">
+<span class="material-icons text-sm">wifi_off</span>
+<span class="material-icons text-sm">add</span>
+</div>
+</div>
+<div class="mb-4">
+<span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Freemium</span>
+</div>
+<div class="grid grid-cols-2 gap-4 text-sm mb-4">
+<div>
+<p class="text-gray-500">Límite</p>
+<p class="font-medium text-gray-800">Ilimitado</p>
+</div>
+<div>
+<p class="text-gray-500">Prop. marcadas</p>
+<p class="font-medium text-gray-800">735</p>
+</div>
+<div>
+<p class="text-gray-500">Último envío</p>
+<p class="font-medium text-gray-800">045 | 16/03/2022</p>
+</div>
+<div>
+<p class="text-gray-500">Estado</p>
+<p class="font-medium text-gray-800">Mostrando calle</p>
+</div>
+<div>
+<p class="text-gray-500">Datos contacto</p>
+<p class="font-medium text-gray-800">Sucursales</p>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full bg-white border border-blue-600 text-blue-600 py-2 rounded-md hover:bg-blue-50 text-sm font-medium">Ver envío</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<img alt="Rightmove logo" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIdGjj7Mf9xw1o6LO8XMiXMvl5F-J_jn_1t0oqiSaCsdcoJTBsR8r_DPeVu0qmnihditeWrxX3En3eWO_cqBdpvnCwhTW4fI1xFm34_qwfOtABR2A7oi3cBKu09z8ENrnwvf2HgLgmj34PYSxPmWrVs8f_C2v7oGxJ2z2Wofki1BWiQUOqJ0Iq_Q8f7VPl-XpyUQKn8fKrltH_y2RiaKigSU52-kDHPADGnDCKDpOGQZ3dQ2eLEI_V3joVYtEmvTmj-WNy0vTz6JM"/>
+<div class="flex items-center space-x-2 text-gray-500">
+<span class="material-icons text-sm">wifi</span>
+<span class="material-icons text-sm">refresh</span>
+<span class="material-icons text-sm">settings</span>
+</div>
+</div>
+<div class="mb-4">
+<span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Freemium</span>
+</div>
+<div class="grid grid-cols-2 gap-4 text-sm mb-4">
+<div>
+<p class="text-gray-500">Límite</p>
+<p class="font-medium text-gray-800">Ilimitado</p>
+</div>
+<div>
+<p class="text-gray-500">Prop. marcadas</p>
+<p class="font-medium text-gray-800">735</p>
+</div>
+<div>
+<p class="text-gray-500">Último envío</p>
+<p class="font-medium text-gray-800">045 | 16/03/2022</p>
+</div>
+<div>
+<p class="text-gray-500">Estado</p>
+<p class="font-medium text-gray-800">Mostrando calle</p>
+</div>
+<div>
+<p class="text-gray-500">Datos contacto</p>
+<p class="font-medium text-gray-800">Sucursales</p>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full bg-white border border-blue-600 text-blue-600 py-2 rounded-md hover:bg-blue-50 text-sm font-medium">Ver envío</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow p-4 flex flex-col">
+<div class="flex items-start justify-between mb-4">
+<img alt="Iradeihurne logo" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw4zk6XmnvMLNwr1epn8ismtBiAtJdACzfAqyFcsAH1DabSKuWEMglr6CUgMWFGF0ceRD8YR91ZmdRT9T0Sk3TF4kQd9n1PHJWbV8A6QiwReg8ULBdtdc3oShzqmhTinA670jMOuvOoCy_iZY_Ww4PgnxjQoquu_-5DKkrKFKu0rLHq-wcbePI18p0RzyYjP1cyP6SPgE36eIupvpfRmu5NyOK2XcKyXL9b6G6_FaXvhRcrigAyCnnMr741hm7t7UcWF33RsHk7rc"/>
+<div class="flex items-center space-x-2 text-gray-500">
+<span class="material-icons text-sm">wifi</span>
+<span class="material-icons text-sm">refresh</span>
+<span class="material-icons text-sm">settings</span>
+</div>
+</div>
+<div class="mb-4">
+<span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Freemium</span>
+</div>
+<div class="grid grid-cols-2 gap-4 text-sm mb-4">
+<div>
+<p class="text-gray-500">Límite</p>
+<p class="font-medium text-gray-800">Ilimitado</p>
+</div>
+<div>
+<p class="text-gray-500">Prop. marcadas</p>
+<p class="font-medium text-gray-800">735</p>
+</div>
+<div>
+<p class="text-gray-500">Último envío</p>
+<p class="font-medium text-gray-800">045 | 16/03/2022</p>
+</div>
+<div>
+<p class="text-gray-500">Estado</p>
+<p class="font-medium text-gray-800">Mostrando calle</p>
+</div>
+<div>
+<p class="text-gray-500">Datos contacto</p>
+<p class="font-medium text-gray-800">Sucursales</p>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full bg-white border border-blue-600 text-blue-600 py-2 rounded-md hover:bg-blue-50 text-sm font-medium">Ver envío</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
