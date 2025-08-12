@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Formulario de Contacto</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+<div class="flex h-screen">
+<aside class="w-20 bg-blue-900 text-white flex flex-col items-center py-4">
+<div class="text-3xl font-bold mb-8">in</div>
+<nav class="flex flex-col space-y-6">
+<a class="p-2 rounded-lg bg-blue-700 text-center" href="#">
+<span class="material-icons">people</span>
+<span class="text-xs block">Prospectos</span>
+</a>
+<a class="p-2 text-center text-gray-400 hover:bg-blue-700 rounded-lg" href="#">
+<span class="material-icons">real_estate_agent</span>
+<span class="text-xs block">Demandas</span>
+</a>
+<a class="p-2 text-center text-gray-400 hover:bg-blue-700 rounded-lg" href="#">
+<span class="material-icons">contacts</span>
+<span class="text-xs block">Contactos</span>
+</a>
+<a class="p-2 text-center text-gray-400 hover:bg-blue-700 rounded-lg" href="#">
+<span class="material-icons">calendar_today</span>
+<span class="text-xs block">Agenda</span>
+</a>
+<a class="p-2 text-center text-gray-400 hover:bg-blue-700 rounded-lg" href="#">
+<span class="material-icons">task</span>
+<span class="text-xs block">Tareas</span>
+</a>
+<a class="p-2 text-center text-gray-400 hover:bg-blue-700 rounded-lg" href="#">
+<span class="material-icons">email</span>
+<span class="text-xs block">Correos</span>
+</a>
+<a class="p-2 text-center text-gray-400 hover:bg-blue-700 rounded-lg" href="#">
+<span class="material-icons">web</span>
+<span class="text-xs block">Portales</span>
+</a>
+<a class="p-2 text-center text-gray-400 hover:bg-blue-700 rounded-lg" href="#">
+<span class="material-icons">donut_large</span>
+<span class="text-xs block">Círculo MLS</span>
+</a>
+<a class="p-2 text-center text-gray-400 hover:bg-blue-700 rounded-lg" href="#">
+<span class="material-icons">pie_chart</span>
+<span class="text-xs block">Utilidades</span>
+</a>
+</nav>
+<div class="mt-auto flex flex-col space-y-6">
+<a class="p-2 text-center text-gray-400 hover:bg-blue-700 rounded-lg" href="#">
+<span class="material-icons">tune</span>
+<span class="text-xs block">Ajustes</span>
+</a>
+<a class="p-2 text-center text-gray-400 hover:bg-blue-700 rounded-lg" href="#">
+<span class="material-icons">help_outline</span>
+<span class="text-xs block">Centro de ayuda</span>
+</a>
+<a class="p-2 text-center text-gray-400 hover:bg-blue-700 rounded-lg" href="#">
+<span class="material-icons">headset_mic</span>
+<span class="text-xs block">Soporte</span>
+</a>
+</div>
+</aside>
+<main class="flex-1 p-6">
+<header class="flex justify-between items-center mb-4">
+<div class="flex items-center space-x-2 text-gray-500">
+<span>Incio</span>
+<span class="material-icons text-sm">chevron_right</span>
+<span>Contactos</span>
+<span class="material-icons text-sm">chevron_right</span>
+<span class="text-gray-900 font-medium">Contacto</span>
+</div>
+<div class="flex items-center space-x-4">
+<button class="flex items-center space-x-2 bg-gray-200 text-gray-600 px-4 py-2 rounded-md hover:bg-gray-300">
+<span class="material-icons">cancel</span>
+<span>Cancelar</span>
+</button>
+<button class="flex items-center space-x-2 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600">
+<span class="material-icons">save</span>
+<span>Guardar</span>
+</button>
+</div>
+</header>
+<div class="bg-white p-4 rounded-lg shadow">
+<div class="flex justify-between items-center mb-4">
+<div class="relative w-1/3">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Buscar en Inmovilla..." type="text"/>
+</div>
+<div class="flex items-center space-x-4">
+<a class="text-blue-600 hover:underline" href="#">Acceso a ficha</a>
+<button class="bg-gray-200 px-4 py-2 rounded-md text-gray-700 hover:bg-gray-300">Buscar campos</button>
+<button class="text-blue-600 hover:underline flex items-center space-x-1">
+<span class="material-icons">delete</span>
+<span>Guardar Borrador</span>
+</button>
+</div>
+</div>
+<div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-md relative mb-4" role="alert">
+<strong class="font-bold">SE HA ENCONTRADO 1 ERRORES EN LA INFORMACIÓN DE TU FICHA.</strong>
+<span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+<svg class="fill-current h-6 w-6 text-red-500" role="button" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"></path></svg>
+</span>
+</div>
+<div class="bg-red-50 border-l-4 border-red-500 text-red-700 p-4 mb-6" role="alert">
+<p>Debes selecionar valor CONTACTO POR. Selecciona un «Medio de contacto». de la lista (En revisión).</p>
+<div class="text-xs text-gray-500 mt-1">#NEEDSTHIS #18247</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="md:col-span-1">
+<div class="flex flex-col items-center">
+<div class="w-32 h-32 bg-gray-200 rounded-full flex items-center justify-center mb-4">
+<span class="material-icons text-6xl text-gray-400">person</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-3 grid grid-cols-1 md:grid-cols-4 gap-4">
+<div>
+<label class="block text-sm font-medium text-gray-700">Fecha Alta</label>
+<input class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" disabled="" type="text" value="03/05/2023 16:00:36"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Fecha Act.</label>
+<input class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" disabled="" type="text" value="03/05/2023 16:00:36"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Gestionado por</label>
+<input class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" disabled="" type="text" value="victornuevoe05"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Captado por</label>
+<input class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" disabled="" type="text" value="victornuevoe05"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Medio de contacto</label>
+<select class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md border">
+<option>Cualquiera</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Idioma</label>
+<select class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+<option>Castellano</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Prioridad</label>
+<div class="flex items-center mt-2 space-x-1">
+<span class="material-icons text-gray-400">star_border</span>
+<span class="material-icons text-gray-400">star_border</span>
+<span class="material-icons text-gray-400">star_border</span>
+<span class="material-icons text-gray-400">star_border</span>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Visibilidad Total</label>
+<div class="mt-1 flex items-center">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" type="checkbox"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Nombre</label>
+<input class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" type="text" value="Vera"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Apellidos</label>
+<input class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" type="text" value="Brezhneva"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">DNI/NIF/NIE/CIF</label>
+<input class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" type="text" value="X415569T"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+<div>
+<label class="block text-sm font-medium text-gray-700">Móvil</label>
+<div class="mt-1 flex rounded-md shadow-sm">
+<span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">+34</span>
+<input class="flex-1 min-w-0 block w-full px-3 py-2 rounded-none border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" type="text" value="654215421"/>
+<button class="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-blue-600 hover:bg-gray-100">
+<span class="material-icons text-sm">phone</span>
+</button>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Otro teléfono</label>
+<div class="mt-1 flex rounded-md shadow-sm">
+<span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">+34</span>
+<input class="flex-1 min-w-0 block w-full px-3 py-2 rounded-none border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Email</label>
+<div class="mt-1 flex rounded-md shadow-sm">
+<input class="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-l-md border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" type="email"/>
+<button class="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-gray-50 text-blue-600 hover:bg-gray-100">
+<span class="material-icons text-sm">email</span>
+</button>
+</div>
+<div class="flex items-center mt-2">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" id="historial" type="checkbox"/>
+<label class="ml-2 block text-sm text-gray-900" for="historial">Historial</label>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Envío de propiedades por email</label>
+<select class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+<option>Activado sin confirmación</option>
+</select>
+<div class="flex items-center mt-2">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" id="confirmacion" type="checkbox"/>
+<label class="ml-2 block text-sm text-gray-900" for="confirmacion">Enviar confirmación al guardar</label>
+</div>
+</div>
+</div>
+<div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-gray-700">Escribe comentario</label>
+<textarea class="mt-1 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md" rows="4"></textarea>
+<div class="mt-2 space-y-2">
+<div class="flex items-center">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" id="whatsapp" type="checkbox"/>
+<label class="ml-2 block text-sm text-gray-900" for="whatsapp">Envío de propiedades por whatsapp</label>
+</div>
+<div class="flex items-center">
+<input class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" id="newsletter" type="checkbox"/>
+<label class="ml-2 block text-sm text-gray-900" for="newsletter">Newsletter</label>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Preferencia Contacto</label>
+<div class="mt-1">
+<div class="flex items-center mb-2">
+<input checked="" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" id="email-auto" type="checkbox"/>
+<label class="ml-2 block text-sm text-gray-900" for="email-auto">Email automático</label>
+</div>
+<input class="mt-1 block w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="TAREAS PENDIENTES" type="text"/>
+</div>
+</div>
+</div>
+<div class="mt-4 flex justify-start">
+<button class="flex items-center space-x-2 bg-gray-200 text-gray-600 px-4 py-2 rounded-md hover:bg-gray-300">
+<span class="material-icons">expand_less</span>
+<span>Expandir / Contraer todos los apartados</span>
+<span class="material-icons">expand_more</span>
+</button>
+</div>
+</div>
+<div class="mt-6 bg-white p-4 rounded-lg shadow">
+<div class="flex justify-between items-center mb-4 pb-2 border-b">
+<h3 class="text-lg font-medium text-gray-900 flex items-center space-x-2">
+<span class="material-icons text-blue-600">arrow_drop_down</span>
+<span>DIRECCIÓN</span>
+<span class="material-icons text-blue-600">arrow_drop_up</span>
+</h3>
+<div class="flex items-center space-x-4">
+<span class="material-icons text-gray-500 cursor-pointer">settings</span>
+<span class="material-icons text-gray-500 cursor-pointer">delete</span>
+</div>
+</div>
+<div class="bg-green-100 border-t-4 border-green-500 rounded-b text-teal-900 px-4 py-3 shadow-md mb-6" role="alert">
+<div class="flex justify-center items-center">
+<div class="py-1 text-center text-sm text-green-700">
+<p>По отношению к клиенту мы можем создать недвижимость, проспект "возможный клиент" или запрос</p>
+</div>
+</div>
+<div class="flex justify-center space-x-4 mt-4">
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md flex items-center space-x-2">
+<span class="material-icons">add_circle_outline</span>
+<span>Crear propiedad</span>
+</button>
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md flex items-center space-x-2">
+<span class="material-icons">add_circle_outline</span>
+<span>Crear prospecto</span>
+</button>
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md flex items-center space-x-2">
+<span class="material-icons">add_circle_outline</span>
+<span>Crear demanda</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+<div>
+<label class="block text-sm font-medium text-gray-700">Calle</label>
+<input class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Num</label>
+<input class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Pta</label>
+<input class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700">Esc</label>
+<input class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" type="text"/>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

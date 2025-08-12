@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Propiedades</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8fafc;
+        }
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        .sidebar {
+            width: 64px;
+            transition: width 0.3s ease;
+        }
+        .sidebar-item-text {
+            display: none;
+        }
+    </style>
+</head>
+<body class="flex">
+<aside class="sidebar bg-blue-800 text-white flex flex-col items-center py-4 space-y-4">
+<button class="p-2 rounded-md hover:bg-blue-700">
+<span class="material-icons">menu</span>
+</button>
+<div class="space-y-2">
+<a class="flex items-center p-2 rounded-md bg-blue-900" href="#">
+<span class="material-icons">home</span>
+<span class="sidebar-item-text ml-2">Inicio</span>
+</a>
+<a class="flex items-center p-2 rounded-md hover:bg-blue-700" href="#">
+<span class="material-icons">domain</span>
+<span class="sidebar-item-text ml-2">Propiedades</span>
+</a>
+<a class="flex items-center p-2 rounded-md hover:bg-blue-700" href="#">
+<span class="material-icons">people</span>
+<span class="sidebar-item-text ml-2">Prospectos</span>
+</a>
+<a class="flex items-center p-2 rounded-md hover:bg-blue-700" href="#">
+<span class="material-icons">contacts</span>
+<span class="sidebar-item-text ml-2">Contactos</span>
+</a>
+<a class="flex items-center p-2 rounded-md hover:bg-blue-700" href="#">
+<span class="material-icons">calendar_today</span>
+<span class="sidebar-item-text ml-2">Agenda</span>
+</a>
+<a class="flex items-center p-2 rounded-md hover:bg-blue-700" href="#">
+<span class="material-icons">task</span>
+<span class="sidebar-item-text ml-2">Tareas</span>
+</a>
+<a class="flex items-center p-2 rounded-md hover:bg-blue-700" href="#">
+<span class="material-icons">apartment</span>
+<span class="sidebar-item-text ml-2">Promociones</span>
+</a>
+<a class="flex items-center p-2 rounded-md hover:bg-blue-700" href="#">
+<span class="material-icons">business</span>
+<span class="sidebar-item-text ml-2">Portales</span>
+</a>
+<a class="flex items-center p-2 rounded-md hover:bg-blue-700" href="#">
+<span class="material-icons">groups</span>
+<span class="sidebar-item-text ml-2">Oficinas MLS</span>
+</a>
+</div>
+<div class="mt-auto space-y-2">
+<a class="flex items-center p-2 rounded-md hover:bg-blue-700" href="#">
+<span class="material-icons">settings</span>
+<span class="sidebar-item-text ml-2">Ajustes</span>
+</a>
+<a class="flex items-center p-2 rounded-md hover:bg-blue-700" href="#">
+<span class="material-icons">help_outline</span>
+<span class="sidebar-item-text ml-2">Ayuda</span>
+</a>
+</div>
+</aside>
+<main class="flex-1 p-6">
+<header class="flex justify-between items-center mb-6">
+<div class="flex-1 max-w-lg">
+<div class="relative">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Buscar en Inmovilla..." type="text"/>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<button class="p-2 rounded-full hover:bg-gray-200">
+<span class="material-icons text-gray-600">call</span>
+</button>
+<button class="p-2 rounded-full hover:bg-gray-200">
+<span class="material-icons text-gray-600">lock</span>
+</button>
+<button class="p-2 rounded-full hover:bg-gray-200">
+<span class="material-icons text-gray-600">settings</span>
+</button>
+<div class="relative">
+<img alt="Avatar de usuario" class="w-10 h-10 rounded-full border-2 border-green-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGC2cXHcdadnjVaL5odGYJagX9AJipu-QCgMFMOHXfWaz0AKxgcHiyUYW-239CCGVPDJl4XtPBIIrOkc_EFuvL_L9J62ah8cO0L7HHT3oRMSrBH7Tqq4cNB3KJ77mYmgh_TIsq5q_afJPJNQjDhwa0sCuyYVCfkYBE9jIizCzsk9CMrDqdqVpoWUzbU2Yppk-zKu2FLYWFK0F_xSbvfu7WMFHR0JsXqMGqE9TyFMr9D8vkhEX2XmxHCeu_cVc2j-9D05DLZwFJxw8"/>
+</div>
+</div>
+</header>
+<div class="flex justify-between items-center mb-4">
+<div class="flex items-center space-x-2">
+<h1 class="text-2xl font-bold text-gray-800">Inicio</h1>
+<span class="material-icons text-gray-500">chevron_right</span>
+<h1 class="text-2xl font-bold text-gray-800">Propiedades</h1>
+</div>
+<div class="flex items-center space-x-2">
+<button class="px-4 py-2 bg-yellow-400 text-white font-semibold rounded-md hover:bg-yellow-500 flex items-center">
+<span class="material-icons mr-2">add</span>
+                    Nueva Propiedad
+                </button>
+</div>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center space-x-4">
+<div class="relative">
+<button class="flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-md bg-white hover:bg-gray-50">
+<span>Acciones</span>
+<span class="material-icons">arrow_drop_down</span>
+</button>
+</div>
+<div class="relative">
+<button class="flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-md bg-white hover:bg-gray-50">
+<span class="material-icons">filter_list</span>
+<span>A. Rápida</span>
+</button>
+</div>
+<p class="text-sm text-gray-500">Knopka dlya bystrogo deystviya</p>
+</div>
+<div>
+<a class="text-sm text-blue-600 hover:underline" href="#">Ayuda</a>
+</div>
+</div>
+<div class="flex items-start space-x-4 mb-4 relative">
+<div class="flex items-center">
+<input class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500" type="checkbox"/>
+</div>
+<div class="relative flex-grow">
+<div class="flex items-center border border-gray-300 rounded-md">
+<div class="relative flex-grow">
+<button class="w-full flex justify-between items-center px-4 py-2 text-left bg-gray-50 rounded-l-md" id="dropdown-button">
+<span class="flex items-center"><span class="material-icons text-yellow-500 mr-2">folder</span> Bolsa CRM</span>
+<span class="material-icons">arrow_drop_down</span>
+</button>
+<div class="hidden absolute z-10 w-full mt-1 bg-white rounded-md shadow-lg border border-gray-200" id="dropdown-menu">
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Mis prospectos</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Mis propiedades</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Mis circulos MLS</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Colaboradores</a>
+<a class="block px-4 py-2 text-sm text-gray-700 bg-blue-100 font-semibold" href="#">Bolsa CRM</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Excluyéndome en mis circulos MLS</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Excluyéndome en colaboradores</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Excluyéndome en bolsa CRM</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Testigos ACM</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Capta. Casafari</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Capta. Residela</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Capta. Domibus Lite/Pro (Inmovilla)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" href="#">Capta. Domibus Pro (Domibus)</a>
+</div>
+</div>
+<input class="flex-grow p-2 focus:outline-none" type="text" value="Ej. Piso de 3 habitaciones en elche con ascensor"/>
+<button class="p-2 text-gray-500 hover:text-gray-700">
+<span class="material-icons">search</span>
+</button>
+</div>
+</div>
+<div class="flex items-center space-x-2">
+<button class="p-2 border border-gray-300 rounded-md text-gray-600 bg-white hover:bg-gray-50">
+<span class="material-icons">map</span>
+</button>
+<button class="p-2 border border-gray-300 rounded-md text-gray-600 bg-white hover:bg-gray-50">
+<span class="material-icons">refresh</span>
+</button>
+</div>
+</div>
+<p class="text-sm text-gray-500 mb-4">Поиск недвижимости в определенной зоне</p>
+<div class="flex justify-between items-center mb-4">
+<p class="text-sm font-semibold">40.606 Resultados</p>
+<div class="flex items-center space-x-4">
+<div class="flex items-center space-x-1">
+<span class="text-sm text-gray-600">Ordenar por:</span>
+<select class="border-0 focus:ring-0 text-sm font-medium">
+<option>Relevancia</option>
+</select>
+</div>
+<div class="flex space-x-1">
+<button class="p-2 rounded-md hover:bg-gray-100 text-gray-600"><span class="material-icons">view_list</span></button>
+<button class="p-2 rounded-md bg-gray-200 text-gray-800"><span class="material-icons">grid_view</span></button>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-white border border-gray-200 rounded-lg p-4">
+<div class="flex justify-between items-start">
+<div class="flex items-start space-x-4">
+<input class="mt-1 h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500" type="checkbox"/>
+<div>
+<p class="text-sm text-gray-500">Ref. NH11808</p>
+<h3 class="text-lg font-semibold text-gray-800">ID-inmueble</h3>
+<p class="text-sm text-gray-600">Piso en Torrevieja (Cabo Cervera -...)</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-xl font-bold text-gray-800">298.000€</p>
+<p class="text-sm text-gray-500">3.301€/m²</p>
+<p class="text-sm text-gray-400 mt-1">Sin valorar</p>
+<span class="material-icons text-yellow-400">star_border</span>
+</div>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center space-x-4 text-sm text-gray-600">
+<span class="flex items-center"><span class="material-icons mr-1">bed</span> 2</span>
+<span class="flex items-center"><span class="material-icons mr-1">bathtub</span> Si</span>
+<span class="flex items-center"><span class="material-icons mr-1">directions_car</span> No</span>
+<span class="flex items-center"><span class="material-icons mr-1">aspect_ratio</span> 90 m²</span>
+<span class="flex items-center"><span class="material-icons mr-1">unfold_more</span> Si</span>
+<span class="flex items-center"><span class="material-icons mr-1">balcony</span> No</span>
+</div>
+<div class="text-right">
+<p class="text-xs text-gray-500">Libre</p>
+<p class="text-xs text-green-600">Actualización hace: Hoy 03/05/2023</p>
+</div>
+</div>
+<div class="flex justify-end items-center mt-4 space-x-2">
+<button class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium hover:bg-gray-50">
+                            Enviar Por <span class="material-icons text-sm ml-1">email</span>
+</button>
+<button class="px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 flex items-center">
+<span class="material-icons text-sm mr-1">close</span>Cruces sin valorar
+                        </button>
+</div>
+</div>
+<div class="bg-white border border-gray-200 rounded-lg p-4">
+<div class="flex justify-between items-start">
+<div class="flex items-start space-x-4">
+<input class="mt-1 h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500" type="checkbox"/>
+<img alt="Apartamento en Torrevieja" class="w-24 h-24 object-cover rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBilBLSZERgka3fj86MXiMzAUZAlKb0Oj9U4KM17FdvyBvLMnAOZ_0mF_pH5V6enZ-AtAIklNOm5_iroKTq4DDCLMbUXBdXfGSA3w3k-OZ-gXHiM2cP3UwUnwK2rKF_DC0_W1_zh00fkZAf-9H0EWDLOoKZJCckITrnaWUAu8ikdio7PZcN5l6GyWjp-9TqDLALi4DMdthWr0PPb0t2gmLiqbf2Dog2oWpACmGrt0OUtEfkcVjMQZBKWfga22GzBU5Jbwpub8GTjCs"/>
+<div>
+<p class="text-sm text-gray-500">Ref. KPV095</p>
+<h3 class="text-lg font-semibold text-gray-800">Apartamento en Torrevieja (Acequion)</h3>
+</div>
+</div>
+<div class="text-right">
+<p class="text-xl font-bold text-gray-800">98.000€</p>
+<p class="text-sm text-gray-500">1.463€/m²</p>
+<p class="text-sm text-gray-400 mt-1">Sin valorar</p>
+<span class="material-icons text-yellow-400">star_border</span>
+</div>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center space-x-4 text-sm text-gray-600 ml-32">
+<span class="flex items-center"><span class="material-icons mr-1">bed</span> 2</span>
+<span class="flex items-center"><span class="material-icons mr-1">bathtub</span> Si</span>
+<span class="flex items-center"><span class="material-icons mr-1">directions_car</span> No</span>
+<span class="flex items-center"><span class="material-icons mr-1">aspect_ratio</span> 67 m²</span>
+<span class="flex items-center"><span class="material-icons mr-1">unfold_more</span> Si</span>
+<span class="flex items-center"><span class="material-icons mr-1">balcony</span> Si</span>
+</div>
+<div class="text-right">
+<p class="text-xs text-gray-500">Libre</p>
+<p class="text-xs text-green-600">Actualización hace: Hoy 03/05/2023</p>
+</div>
+</div>
+<div class="flex justify-end items-center mt-4 space-x-2">
+<button class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium hover:bg-gray-50">
+                            Enviar Por <span class="material-icons text-sm ml-1">email</span>
+</button>
+<button class="px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 flex items-center">
+<span class="material-icons text-sm mr-1">close</span> Cruces sin valorar
+                        </button>
+</div>
+</div>
+<div class="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4">
+<div class="flex justify-between items-start">
+<div class="flex items-start space-x-4">
+<input class="mt-1 h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500" type="checkbox"/>
+<img alt="Piso en Torrevieja" class="w-24 h-24 object-cover rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8yyGIfsahxUuQAbjrCJuKSsXDs8EbfQY8FLRDl1uy7txuG8goDEb716UD_RwGDonSUSyUlAGuNCoaACIoXOMP0LcRNB3avgb7eFHgauIbtvTlZiJxmCaQdT1akpB1-VRTFRjv5vTvh5tXnvN-h0b6Zyk2T9hXR2CjGYDhURRkX4FOBOsD7-U8vRDBjDhjyGLQINqBs9NiuN14U4qotSTyX97ClF1-CiXk45i3pysvC1WWJETvpde0o4GWyglH8aBJaIag2rAqMvY"/>
+<div>
+<p class="text-sm text-gray-500">Ref. NBH1188</p>
+<h3 class="text-lg font-semibold text-gray-800">ID-inmueble</h3>
+<p class="text-sm text-gray-600">Piso en Torrevieja (Cabo Cervera...)</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-xl font-bold text-gray-800">119.900€</p>
+<p class="text-sm text-gray-500">2.725€/m²</p>
+</div>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center space-x-4 text-sm text-gray-600 ml-32">
+<span class="flex items-center"><span class="material-icons mr-1">bed</span> -</span>
+<span class="flex items-center"><span class="material-icons mr-1">bathtub</span> -</span>
+<span class="flex items-center"><span class="material-icons mr-1">directions_car</span> -</span>
+<span class="flex items-center"><span class="material-icons mr-1">aspect_ratio</span> 44 m²</span>
+<span class="flex items-center"><span class="material-icons mr-1">unfold_more</span> No</span>
+<span class="flex items-center"><span class="material-icons mr-1">balcony</span> Si</span>
+</div>
+<div class="text-right">
+<p class="text-xs text-gray-500">Libre</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdownButton = document.getElementById('dropdown-button');
+            const dropdownMenu = document.getElementById('dropdown-menu');
+            dropdownButton.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('hidden');
+            });
+            document.addEventListener('click', function(event) {
+                if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+</body></html>

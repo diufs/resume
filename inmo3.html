@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inmovilla</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100">
+<header class="bg-white shadow-md">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between py-2">
+<div class="flex items-center space-x-4">
+<button class="text-gray-500">
+<i class="material-icons">menu</i>
+</button>
+<div class="relative">
+<input class="bg-gray-100 border border-gray-300 rounded-md py-2 pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent w-96" placeholder="Buscar en Inmovilla..." type="text"/>
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<a class="text-blue-600 hover:text-blue-800" href="#">
+<i class="material-icons">phone</i>
+</a>
+<a class="text-gray-600 hover:text-gray-800" href="#">
+<i class="material-icons">event</i>
+</a>
+<a class="text-gray-600 hover:text-gray-800" href="#">
+<i class="material-icons">email</i>
+</a>
+<div class="relative">
+<button class="flex items-center space-x-2">
+<img alt="User avatar" class="w-8 h-8 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5oSeMWT26mNyxA866Mzm6F3xet6tCuTJBLFzp6MSthz9gdSUQXKdiczCspVrpUG84LAPGSvO10Q24S4XA-LtbxYhz_hDxyP5QG2Pwk2pXoPwLakcisHiKZD5g6EbReFaIrEzIjyQqdGjGlGWlhEjVNJwwi4qqztudWzugzI9awK7Iah3u7PTOlnkPJ9Gxkl-vA_OeZS1qK7u0hXJOne9UIxjaLh2piDbUOW1KFx0iw_2QNnRwzmP6Q-HdKQk4p8o3-_tfq47fKqGV"/>
+<span class="material-icons text-gray-600">arrow_drop_down</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 border-t border-b">
+<div class="container mx-auto px-4 py-2 flex items-center justify-between">
+<div class="flex items-center space-x-4">
+<button class="text-gray-500 text-sm">Buscar campos</button>
+</div>
+<div class="flex items-center space-x-2">
+<button class="bg-yellow-400 text-white font-bold py-2 px-4 rounded-md text-sm hover:bg-yellow-500">Nueva Propiedad</button>
+<button class="bg-white border border-gray-300 text-gray-700 font-bold py-2 px-4 rounded-md text-sm flex items-center space-x-1 hover:bg-gray-100">
+<span>Acceso rápido</span>
+<i class="material-icons text-sm">arrow_drop_down</i>
+</button>
+<button class="bg-blue-600 text-white font-bold py-2 px-4 rounded-md text-sm flex items-center space-x-1 hover:bg-blue-700">
+<i class="material-icons text-sm">settings</i>
+<span>Acciones</span>
+<i class="material-icons text-sm">arrow_drop_down</i>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="container mx-auto p-4">
+<div class="bg-white p-4 rounded-lg shadow-md mb-6">
+<div class="flex justify-between items-center pb-2 border-b">
+<div class="flex items-center space-x-2">
+<button class="text-gray-500">
+<i class="material-icons">drag_handle</i>
+</button>
+<h2 class="text-sm font-bold text-blue-600">
+<i class="material-icons text-sm">arrow_drop_down</i> DATOS VENTA
+                    </h2>
+</div>
+<div class="flex items-center space-x-2">
+<button class="text-gray-500"><i class="material-icons">settings</i></button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+<div>
+<label class="text-xs text-gray-500 block" for="precio">Precio inmobiliario</label>
+<input class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-blue-500" id="precio" type="text" value="98000 €"/>
+<p class="text-xs text-green-600 mt-1">Hace un mes</p>
+</div>
+<div class="relative">
+<div class="flex justify-between items-center mb-1">
+<h3 class="text-sm font-bold text-blue-600 flex items-center"><i class="material-icons text-base mr-1">group_work</i> COLABORACIÓN</h3>
+<span class="bg-gray-800 text-white text-xs font-bold px-2 py-1 rounded">HAY 1 DATO INTERNO</span>
+</div>
+<div class="border-2 border-green-500 rounded-lg p-4">
+<label class="text-xs text-gray-500 block" for="comparicion">Detalle Comparición</label>
+<textarea class="w-full border border-gray-300 rounded-md p-2 h-16 focus:outline-none focus:ring-2 focus:ring-blue-500" id="comparicion">6% para compartir</textarea>
+<p class="text-xs text-green-600 mt-2 text-center">Комиссия какая включена для партнера в случаи продажи</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 mt-4 border-t">
+<h2 class="text-sm font-bold text-blue-600 flex items-center">
+<span class="text-gray-500 mr-2">0/37</span>
+<i class="material-icons text-sm">arrow_right</i> DATOS ALQUILER
+                </h2>
+<button class="text-gray-500"><i class="material-icons">settings</i></button>
+</div>
+<div class="flex items-center justify-between pt-4 mt-4 border-t">
+<h2 class="text-sm font-bold text-blue-600 flex items-center">
+<span class="text-gray-500 mr-2">0/20</span>
+<i class="material-icons text-sm">arrow_right</i> DATOS INTERNOS
+                </h2>
+<button class="text-gray-500"><i class="material-icons">settings</i></button>
+</div>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+<div class="flex justify-between items-center pb-2 border-b">
+<div class="flex items-center space-x-2">
+<button class="text-gray-500">
+<i class="material-icons">person</i>
+</button>
+<h2 class="text-sm font-bold text-blue-600">
+                        PROPIETARIO <span class="text-red-500">*</span>
+</h2>
+</div>
+<div class="flex items-center space-x-2">
+<p class="text-sm text-green-600">Данные для связи с агенством которое продает</p>
+<button class="text-gray-600"><i class="material-icons">person</i></button>
+<button class="text-gray-600"><i class="material-icons">person_add</i></button>
+</div>
+</div>
+<div class="mt-4 border-2 border-green-500 rounded-lg p-4">
+<div class="grid grid-cols-1 md:grid-cols-6 gap-4 items-end">
+<div class="flex items-center space-x-3 col-span-1">
+<div class="bg-gray-200 p-3 rounded-full">
+<i class="material-icons text-gray-500 text-3xl">person</i>
+</div>
+</div>
+<div class="col-span-1">
+<label class="text-xs text-gray-500">Nombre</label>
+<input class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-blue-500" type="text" value="Kama Propiert"/>
+</div>
+<div class="col-span-1">
+<label class="text-xs text-gray-500">Apellidos</label>
+<input class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-blue-500" type="text" value="Kama Properties"/>
+</div>
+<div class="col-span-1">
+<label class="text-xs text-gray-500">Tel./Sp.</label>
+<div class="flex">
+<select class="border-b border-gray-300 py-1 focus:outline-none focus:border-blue-500 text-sm">
+<option>Prefijo</option>
+</select>
+<input class="w-full border-b border-gray-300 py-1 px-1 focus:outline-none focus:border-blue-500" type="text" value="661 527 953"/>
+</div>
+</div>
+<div class="col-span-1">
+<label class="text-xs text-gray-500">Email</label>
+<div class="flex items-center">
+<input class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-blue-500" type="email" value="info.es.kama@gmail.com"/>
+<button class="text-blue-500 text-xs ml-2">Historial</button>
+</div>
+</div>
+<div class="col-span-1">
+<label class="text-xs text-gray-500">Ciudad</label>
+<input class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-blue-500" type="text" value="Villajoyosa"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-4 items-end mt-4">
+<div class="col-span-1"></div>
+<div class="col-span-5">
+<label class="text-xs text-gray-500">Domicilio Propiedad</label>
+<input class="w-full border-b border-gray-300 py-1 focus:outline-none focus:border-blue-500" type="text" value="Av Ensenyants de La V"/>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+</body></html>
