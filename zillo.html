@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Real Estate</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+<header class="bg-white shadow-md">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center space-x-8">
+<a class="text-blue-600 font-bold text-2xl" href="#">Zillow</a>
+<nav class="hidden md:flex space-x-6">
+<a class="text-gray-700 hover:text-blue-600" href="#">Buy</a>
+<a class="text-gray-700 hover:text-blue-600" href="#">Rent</a>
+<a class="text-gray-700 hover:text-blue-600" href="#">Sell</a>
+<a class="text-gray-700 hover:text-blue-600" href="#">Get a mortgage</a>
+<a class="text-gray-700 hover:text-blue-600" href="#">Find an Agent</a>
+</nav>
+</div>
+<div class="flex items-center space-x-6">
+<a class="text-gray-700 hover:text-blue-600 hidden md:block" href="#">Manage Rentals</a>
+<a class="text-gray-700 hover:text-blue-600 hidden md:block" href="#">Advertise</a>
+<a class="text-gray-700 hover:text-blue-600 hidden md:block" href="#">Help</a>
+<div class="relative">
+<button class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+<span class="material-icons text-xl">notifications</span>
+</button>
+<span class="absolute -top-1 -right-1 bg-red-600 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">1</span>
+</div>
+</div>
+</div>
+</header>
+<main class="flex flex-col md:flex-row">
+<div class="w-full md:w-1/2 relative">
+<img alt="Map of New York showing real estate listings" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy6Mn5wd6MaV5yzbQp94Kk2GppmkQNSrHVbxN6eOOU6cycKBJGjSIBzi71TjBByNTHnuB55lTI3aBp_P36yPfWJdYvet_VmS3ZVIJXGlwdn8QVo3W60ATUzlWt_onWad0Mvre0Cwi4b4IUWTOR5iL6F9FUmVsLbHcriSbIjBjex0BN2I2vfNxL9pwfxdytgHLhfId9u0_6ZYO3qabs7bnS_f_nhiRWjow93wrI9N28-y5opV3AWSNy1lNRow_xQj-NkluVxkLwbQX0"/>
+<div class="absolute top-4 left-4 bg-white p-2 rounded-lg shadow-lg text-sm font-semibold">
+                800 of 21991 homes
+            </div>
+<div class="absolute top-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+<button class="bg-white px-4 py-2 rounded-full shadow-md flex items-center">
+                    Schools <span class="material-icons ml-1">arrow_drop_down</span>
+</button>
+<button class="bg-white px-4 py-2 rounded-full shadow-md flex items-center text-blue-600">
+                    Remove Boundary <span class="material-icons ml-1">close</span>
+</button>
+</div>
+<div class="absolute bottom-4 right-4 flex flex-col space-y-2">
+<button class="bg-white w-10 h-10 rounded-t-lg shadow-md flex items-center justify-center"><span class="material-icons">add</span></button>
+<button class="bg-white w-10 h-10 rounded-b-lg shadow-md flex items-center justify-center"><span class="material-icons">remove</span></button>
+</div>
+</div>
+<div class="w-full md:w-1/2 bg-white p-4">
+<div class="flex flex-col space-y-4">
+<div class="flex flex-wrap items-center gap-2">
+<div class="relative flex-grow">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="pl-10 pr-4 py-2 border rounded-md w-full" placeholder="New York NY" type="text"/>
+</div>
+<button class="bg-white border rounded-md px-4 py-2 flex items-center">For Sale <span class="material-icons ml-1">arrow_drop_down</span></button>
+<button class="bg-white border rounded-md px-4 py-2 flex items-center">Price <span class="material-icons ml-1">arrow_drop_down</span></button>
+<button class="bg-white border rounded-md px-4 py-2 flex items-center">Beds &amp; Baths <span class="material-icons ml-1">arrow_drop_down</span></button>
+<button class="bg-white border rounded-md px-4 py-2 flex items-center">Home Type <span class="material-icons ml-1">arrow_drop_down</span></button>
+<button class="bg-white border rounded-md px-4 py-2 flex items-center">More <span class="material-icons ml-1">arrow_drop_down</span></button>
+<button class="bg-blue-600 text-white px-4 py-2 rounded-md">Save search</button>
+</div>
+<div class="flex justify-between items-center">
+<div>
+<h1 class="text-2xl font-bold">New York NY Real Estate &amp; Homes For Sale</h1>
+<p class="text-gray-600">21,991 results</p>
+</div>
+<div class="flex items-center">
+<span class="mr-2 text-gray-600">Sort:</span>
+<button class="text-blue-600 font-semibold flex items-center">Homes for You <span class="material-icons">arrow_drop_down</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="relative">
+<img alt="Showcase house with a beautiful lit exterior" class="w-full h-56 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAayVBa4yK_chcxeRq7gEbnZ_i9UKUMb2g-0upoC4Ul7oEqbjcstVwfNTT6Di5VZFSTeB0_VxBDvYf1RRGtKlx4-cGipq3AmOjaMQNurCxf8o2lwPs5-UHehhTA75WY99jRDsWv0L3nnMAc2Q0dNkxAi8Alh5L-sfXTkI-mRIXxOo4YXX9xrsNPDWbhK6hYmFpuL4M6DUoYbNjamKjY260sgDq6yAOhoCFTS0M_Tk-aVRYF1ezqJymzj29wTTHcHU_NW6QyECEjkpUe"/>
+<div class="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded-md">Showcase</div>
+<button class="absolute top-2 right-2 bg-gray-800 bg-opacity-50 text-white rounded-full p-1">
+<span class="material-icons">favorite_border</span>
+</button>
+<span class="absolute bottom-2 right-2 bg-black bg-opacity-50 text-white text-xs px-2 py-1 rounded-md">14 hours ago</span>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start">
+<p class="text-2xl font-bold">$2,695,000</p>
+<button class="text-gray-400"><span class="material-icons">more_horiz</span></button>
+</div>
+<div class="text-gray-700 mt-1">
+<span>5 bds</span> | <span>4 ba</span> | <span>3,885 sqft</span> - House for sale
+                            </div>
+<p class="text-gray-600 mt-1">28 Hollister St, Staten Island, NY 10309</p>
+<p class="text-xs text-gray-500 mt-2">LISTING BY: PREREAL PRENDAMANO REAL ESTATE</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="relative">
+<img alt="Modern townhouse with a brick facade" class="w-full h-56 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbuPZ9iNunNXADryO-cPakVR9HrFs1SRC0MwivgTW2peCUHcTeDVfWp3ztzQyudSyIrMSYYd73b6eXrKsTBo-IOwwkCd-IySpSAQebj76sGmXieoSieRk61o1yfmlCpgZ7zZ5DJ4YpTS3JQSVyJBO2h2L_FbCpSRdDO9-95PNSaXXD453otO7z2O_UIh1TVGxUDN9C5OI7VhYwCAkxK3YJcjVV_eLldxlE2rZgKBkNq_AUdJ9CiahwqnO5kg2j4qhki2wSR6P_Up7-"/>
+<button class="absolute top-2 right-2 bg-gray-800 bg-opacity-50 text-white rounded-full p-1">
+<span class="material-icons">favorite_border</span>
+</button>
+<div class="absolute bottom-0 right-0 p-2">
+<img alt="OneKey MLS logo" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACknKTGQ1X9NTayQLi-HOESzKRQNLbBRogZto9DO4suvXzFpdcJ8EPbo0ggYA8PjkYQplqTeteTRgm3hKfECCSltPWo4xmC8zK_KaKXKx24a4Shq6o3zZMadohBmdbclNVgn5gnOEYkXbKX0WbzQHXdTfT8woaidacCR4NnuyKvMB_KYzCpROpEszmQGIQAQxrtcnLZJaSzXUKa584PU7gYUCL6AxGiH_RzicLOy10rOO6xX_5oR3i9qzkv808Y1F7G9vtnUkqXSA_"/>
+</div>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start">
+<p class="text-2xl font-bold">$699,000</p>
+<button class="text-gray-400"><span class="material-icons">more_horiz</span></button>
+</div>
+<div class="text-gray-700 mt-1">
+<span>5 bds</span> | <span>3 ba</span> | <span>2,052 sqft</span> - Townhouse for sale
+                            </div>
+<p class="text-gray-600 mt-1">158 Beach 6 1st Street, Arverne, NY 11692</p>
+<p class="text-xs text-gray-500 mt-2">LISTING BY: ARCHSTONE REAL ESTATE GROUP</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="relative">
+<img alt="Luxury mansion with private gates" class="w-full h-56 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPUnClOSkSOWw7NpcuH2hx-crxXObJVExlFWBX1gbImtzF6IyuzOSE1LOsUmhX2OAHJdNczPgubS2B4GVvhz3Oa4QLXbH0ayF09dZgq4qivgytdDWdOSQE7f4PM_Yf-IhgONNYf4RfwbYUsndVnyqyb0aIH0TCPOdBCC0gMk4SFYMvXUpV88y-vHdUYCSC9ye8NnIdjOjGO7yI0NWYJeCJaH3-KPll0dvHk4b2BWwgofNKdiq96RPX3a7cxh6z8lu6n7HizxlB8glv"/>
+<div class="absolute top-2 left-2 bg-gray-700 text-white text-xs px-2 py-1 rounded-md">Private gates</div>
+<button class="absolute top-2 right-2 bg-gray-800 bg-opacity-50 text-white rounded-full p-1">
+<span class="material-icons">favorite_border</span>
+</button>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start">
+<p class="text-2xl font-bold">$18,000,000</p>
+<button class="text-gray-400"><span class="material-icons">more_horiz</span></button>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="relative">
+<img alt="Spacious guest bathroom with modern fixtures" class="w-full h-56 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFHPlVk8OaWnL6ZoVMABzSc5vfCw7lxKx0aHTcXCJJw141j8JK-B8EhSZqQsAu5kHBLYZ4cwdM0t94jQwleIWNqowFNOZCnos0VE0USzR9HnXRr-oYxkFQPFSUeGuC5Wk5wJZlWh-7MOWjXC2i7pnGEN6V5A5OKXrFoG_dvmCvUUeYnx3X-2U17UEgXX90aO8eVxaFxKEfBEp7_j2UADjb_E9VO7QDHJ_7hMotaCJJJO0ks7CKylbCQZnfAAiXJpyvfOiePGCQG9JD"/>
+<div class="absolute top-2 left-2 bg-gray-700 text-white text-xs px-2 py-1 rounded-md">Guest bathroom</div>
+<button class="absolute top-2 right-2 bg-gray-800 bg-opacity-50 text-white rounded-full p-1">
+<span class="material-icons">favorite_border</span>
+</button>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start">
+<p class="text-2xl font-bold">$445,000</p>
+<button class="text-gray-400"><span class="material-icons">more_horiz</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+</body></html>
