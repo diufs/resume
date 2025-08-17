@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Домклик</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100">
+<header class="bg-white shadow-md">
+<div class="container mx-auto px-6 py-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+<img alt="Domklick logo" class="h-8 mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGBNFzXmKWIIV3rK_9RLb8GjkaoTqFbz-3oWKQI36lRsbLBw_TIyvGds8ZC7b_HrYFW5poVahTVjJW9OElMJd4Lrhun92W1SnKVNrIYe6G3uvs-981VIPhkhUssoziarxrkSABD9vlPCKgvstGQjBmQAi_69o2goahPUAujSZl0ipmgJPyxc6s2j_4_oUKZm8TaXexNRoEYI49qo6xDNlKZDvYVRyy-7Gn_5Hi9ndjosqFVTrmpJ-IHD-nxCFzeCUgP5Ej3EHQKvbQ"/>
+<div class="flex items-center text-sm text-gray-600">
+<span class="material-icons mr-1">location_on</span>
+<span>Москва</span>
+</div>
+</div>
+<div class="hidden md:flex items-center space-x-6 text-sm">
+<a class="text-gray-600 hover:text-blue-500" href="#">Партнерам</a>
+<a class="text-gray-600 hover:text-blue-500" href="#">Консультация</a>
+</div>
+<div class="flex items-center">
+<button class="flex items-center text-sm text-gray-600 mr-4">
+<span class="material-icons mr-1">search</span>
+</button>
+<button class="flex items-center text-sm text-gray-600 mr-4">
+<span class="material-icons">favorite_border</span>
+</button>
+<a class="text-blue-500 font-semibold text-sm" href="#">Разместить объявление</a>
+<div class="h-6 w-px bg-gray-300 mx-4"></div>
+<a class="text-gray-600 hover:text-blue-500 text-sm" href="#">Войти или зарегистрироваться</a>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between border-t pt-3">
+<nav class="flex space-x-6 text-sm">
+<a class="text-gray-900 font-semibold border-b-2 border-green-500 pb-2" href="#">Покупка</a>
+<a class="text-gray-600 hover:text-gray-900" href="#">Аренда</a>
+<a class="text-gray-600 hover:text-gray-900" href="#">Новостройки</a>
+<a class="text-gray-600 hover:text-gray-900" href="#">Построить дом</a>
+<a class="text-gray-600 hover:text-gray-900" href="#">Ипотека</a>
+<a class="text-gray-600 hover:text-gray-900" href="#">Услуги</a>
+<a class="text-gray-600 hover:text-gray-900 flex items-center" href="#">
+                        Журнал <span class="ml-2 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-full">33</span>
+</a>
+<a class="text-gray-600 hover:text-gray-900" href="#">Риелторы</a>
+</nav>
+</div>
+</div>
+</header>
+<main class="container mx-auto px-6 py-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 bg-white p-8 rounded-lg shadow-md">
+<h2 class="text-2xl font-bold mb-8 text-gray-800">Укажите дополнительные параметры</h2>
+<div class="space-y-6">
+<div class="flex items-center">
+<label class="w-1/4 text-gray-600">Санузел</label>
+<div class="flex space-x-2">
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">Совмещённый</button>
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">Раздельный</button>
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">Более одного</button>
+</div>
+</div>
+<div class="flex items-center">
+<label class="w-1/4 text-gray-600">Балкон/Лоджия</label>
+<div class="flex space-x-2">
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">1</button>
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">2</button>
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">3+</button>
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">Нет</button>
+</div>
+</div>
+<div class="flex items-center">
+<label class="w-1/4 text-gray-600">Вид из окна</label>
+<div class="flex space-x-2">
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">Двор</button>
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">Улица</button>
+</div>
+</div>
+<div class="flex items-center">
+<label class="w-1/4 text-gray-600">Можно с детьми</label>
+<div class="flex space-x-2">
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">Да</button>
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">Нет</button>
+</div>
+</div>
+<div class="flex items-center">
+<label class="w-1/4 text-gray-600">Можно с животными</label>
+<div class="flex space-x-2">
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">Да</button>
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">Нет</button>
+</div>
+</div>
+<div class="flex items-center">
+<label class="w-1/4 text-gray-600">Коммунальные платежи</label>
+<div class="flex space-x-2">
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">Не включены</button>
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">Включены</button>
+<button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">По счётчикам</button>
+</div>
+</div>
+</div>
+<div class="mt-12">
+<button class="w-full bg-green-500 text-white font-bold py-3 px-4 rounded-md hover:bg-green-600 transition duration-300">
+                        Далее
+                    </button>
+</div>
+</div>
+<div class="md:col-span-1">
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-lg font-semibold mb-4 text-gray-800">Обязательно для заполнения</h3>
+<ul class="space-y-4">
+<li class="flex items-center text-green-500">
+<span class="material-icons mr-2">check_circle</span>
+<span>Тип недвижимости</span>
+</li>
+<li class="flex items-center text-green-500">
+<span class="material-icons mr-2">check_circle</span>
+<span>Адрес</span>
+</li>
+<li class="flex items-center text-green-500">
+<span class="material-icons mr-2">check_circle</span>
+<span>Параметры</span>
+</li>
+<li class="flex items-center text-green-500">
+<span class="material-icons mr-2">check_circle</span>
+<span>Фотографии</span>
+</li>
+<li class="flex items-center text-gray-400">
+<span class="material-icons mr-2">radio_button_unchecked</span>
+<span>Описание</span>
+</li>
+<li class="flex items-center text-gray-400">
+<span class="material-icons mr-2">radio_button_unchecked</span>
+<span>Цена</span>
+</li>
+<li class="flex items-center text-gray-400">
+<span class="material-icons mr-2">radio_button_unchecked</span>
+<span>Контакты</span>
+</li>
+</ul>
+<button class="mt-6 w-full bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-md hover:bg-gray-300 flex items-center justify-center">
+<span class="material-icons mr-2">chevron_left</span>
+                        Назад
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed bottom-5 right-5">
+<button class="bg-gray-800 text-white p-3 rounded-full shadow-lg">
+<span class="material-icons">chat_bubble</span>
+</button>
+</div>
+
+</body></html>
