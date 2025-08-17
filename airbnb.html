@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Comodidades del Alojamiento</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white">
+<div class="flex flex-col h-screen">
+<header class="flex justify-between items-center p-4 border-b">
+<a class="text-gray-800" href="#">
+<svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"></path>
+</svg>
+</a>
+<div class="flex items-center space-x-4">
+<button class="text-sm font-medium text-gray-700 hover:text-gray-900">¿Tienes alguna duda?</button>
+<button class="text-sm font-medium text-white bg-gray-800 hover:bg-gray-900 px-4 py-2 rounded-md">Guardar y salir</button>
+</div>
+</header>
+<main class="flex-grow overflow-y-auto px-4 md:px-20 lg:px-48 xl:px-64 2xl:px-96 py-8">
+<h1 class="text-2xl md:text-3xl font-bold text-gray-800">Cuéntales a los viajeros todo lo que ofrece tu espacio</h1>
+<p class="text-gray-600 mt-2 mb-8">Puedes añadir más comodidades después de publicar el anuncio.</p>
+<section>
+<h2 class="text-lg font-semibold text-gray-700">¿Y estos? ¿Son los favoritos de los viajeros?</h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">wifi</span>
+<span class="text-sm mt-2 text-center">Wifi</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">tv</span>
+<span class="text-sm mt-2 text-center">TV</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border-2 border-gray-800 rounded-lg bg-gray-50 cursor-pointer">
+<span class="material-icons-outlined text-3xl">kitchen</span>
+<span class="text-sm mt-2 text-center">Cocina</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">local_laundry_service</span>
+<span class="text-sm mt-2 text-center">Lavadora</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">local_parking</span>
+<span class="text-sm mt-2 text-center">Aparcamiento gratuito en las instalaciones</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">paid</span>
+<span class="text-sm mt-2 text-center">Aparcamiento de pago en las instalaciones</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">ac_unit</span>
+<span class="text-sm mt-2 text-center">Aire acondicionado</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">work</span>
+<span class="text-sm mt-2 text-center">Zona para trabajar</span>
+</div>
+</div>
+</section>
+<section class="mt-12">
+<h2 class="text-lg font-semibold text-gray-700">¿Ofreces algún servicio fuera de lo común?</h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">pool</span>
+<span class="text-sm mt-2 text-center">Piscina</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">hot_tub</span>
+<span class="text-sm mt-2 text-center">Jacuzzi</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">deck</span>
+<span class="text-sm mt-2 text-center">Patio</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">outdoor_grill</span>
+<span class="text-sm mt-2 text-center">Barbacoa</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">dining</span>
+<span class="text-sm mt-2 text-center">Comedor al aire libre</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">fireplace</span>
+<span class="text-sm mt-2 text-center">Brasero exterior</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">table_bar</span>
+<span class="text-sm mt-2 text-center">Mesa de billar</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">fireplace</span>
+<span class="text-sm mt-2 text-center">Chimenea interior</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">piano</span>
+<span class="text-sm mt-2 text-center">Piano</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">fitness_center</span>
+<span class="text-sm mt-2 text-center">Equipo para hacer ejercicio</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">water</span>
+<span class="text-sm mt-2 text-center">Acceso al lago</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">beach_access</span>
+<span class="text-sm mt-2 text-center">Acceso a la playa</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">downhill_skiing</span>
+<span class="text-sm mt-2 text-center">Pista de esquí</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-gray-800 cursor-pointer">
+<span class="material-icons-outlined text-3xl">shower</span>
+<span class="text-sm mt-2 text-center">Ducha exterior</span>
+</div>
+</div>
+<p class="text-sm mt-8 text-gray-700 underline cursor-pointer hover:text-gray-900">¿Tienes aún más de estos servicios de ensueño?</p>
+</section>
+</main>
+<footer class="flex justify-between items-center p-4 border-t sticky bottom-0 bg-white">
+<button class="text-gray-700 font-medium underline hover:text-gray-900">Atrás</button>
+<button class="bg-gray-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-900">Siguiente</button>
+</footer>
+</div>
+
+</body></html>
